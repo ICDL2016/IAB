@@ -1,0 +1,10 @@
+extends layouts/layout_header_title
+block vars
+   - var title='Авторизация'
+block content
+   .text-center
+      .login-form
+         input(type="text",placeholder="E-mail")
+         input(type="password",placeholder="Пароль")
+         button.btn-angle(type="submit") Вход
+         a(href="") Забыли пароль?

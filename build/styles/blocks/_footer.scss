@@ -1,0 +1,40 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2px 0 3px;
+  background: #ffffff;
+  line-height: 0;
+  border-top: 7px solid #b70018;
+  &__text {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 8px 7px 8px 10px;
+    color: #6b0001;
+
+    //font-size: 20px;
+    //line-height: 22px;
+    img{
+      display: inline-block;
+      vertical-align: middle;
+      width: 100px;
+    }
+  }
+  &__info {
+    padding-right: 10px;
+    font-weight: bold;
+    float: right;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    color: #000;
+    a {
+      color: #000;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
