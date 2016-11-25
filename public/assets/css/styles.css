@@ -4184,7 +4184,7 @@ body {
     display: table-cell;
     vertical-align: middle;
  }
-  
+
     @media (max-width: 500px) {
       .course-item__title {
         font-size: 11px;
