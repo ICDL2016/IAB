@@ -4172,7 +4172,11 @@ body {
     @media (max-width: 500px) {
       .course-item__content {
         padding-top: 3px;
-        padding-bottom: 20px; } }
+        padding-bottom: 20px; }
+      .course-item__title {
+        height: 50px;
+      }
+    }
   .course-item__title {
     color: #C5000B;
     font-weight: bold;
@@ -4189,7 +4193,11 @@ body {
       .course-item__title {
         font-size: 11px;
         line-height: 13px;
-        margin-bottom: 5px; } }
+        margin-bottom: 5px; }
+      .course-item__title {
+        height: 50px;
+      }
+    }
   .course-item__info {
     position: absolute;
     bottom: 0;
@@ -4207,15 +4215,21 @@ body {
     float: left;
     font-size: 14px; }
     @media (max-width: 500px) {
+      .course-item__price-old {
+        font-size: 11px;
+      }
+
+
       .course-item__duration {
-        font-size: 13px; } }
+        font-size: 11px; } }
   .course-item__price {
     float: right;
     font-size: 14px;
     font-weight: bold; }
     @media (max-width: 500px) {
+
       .course-item__price {
-        font-size: 13px; } }
+        font-size: 12px; } }
     .course-item__price-old {
       font-size: 13px;
       display: inline-block;
