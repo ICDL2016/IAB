@@ -137,6 +137,9 @@ input:focus, textarea:focus {
     .directions-block:hover {
       background: #b70018; }
 
+.directions-mobile {
+  display: none; }
+
 .programs {
   display: flex;
   width: 100%;
@@ -520,3 +523,72 @@ input:focus, textarea:focus {
   transition: all 0.3s; }
   .login-submit:hover, .remind-submit:hover {
     background: #b70018; }
+
+@media screen and (max-width: 991px) {
+  .video-block {
+    height: 300px; }
+
+  .programs-block__descr {
+    font-size: 11px; }
+
+  .contacts-managers {
+    width: 600px; }
+  .contacts-manager {
+    width: 200px; } }
+@media screen and (max-width: 767px) {
+  .directions-block {
+    padding: 5px;
+    font-size: 12px; }
+
+  .programs-block {
+    margin: auto;
+    width: 90%; }
+
+  .form-descr {
+    width: 100%; }
+
+  .contacts-managers {
+    width: 100%; }
+  .contacts-manager {
+    width: 33%; }
+    .contacts-manager__name {
+      font-size: 13px; } }
+@media screen and (max-width: 575px) {
+  .error404-descr {
+    width: 100%; }
+
+  .directions-desktop {
+    display: none; }
+  .directions-mobile {
+    display: block; }
+  .directions-block {
+    font-size: 14px; }
+
+  .video-block::after {
+    border: 30px solid transparent;
+    border-left: 50px solid #800000; }
+
+  .study-img {
+    flex-direction: column;
+    align-items: center; }
+    .study-img a {
+      margin-bottom: 10px;
+      width: 50%; }
+
+  .header-title {
+    display: none; } }
+@media screen and (max-width: 450px) {
+  .form, .or-choose__btn, .icons, .contacts-textarea {
+    width: 100%; }
+
+  .icons a {
+    padding: 5px 3px;
+    width: 30px; }
+
+  .video-block {
+    height: 200px; }
+
+  .programs-block {
+    height: 80px; }
+    .programs-block__img {
+      display: none; } }

@@ -1,7 +1,9 @@
 <?php require_once '_header.php'?>
 
 <div class="prices-title course-title">
-    <strong>СТОИМОСТЬ ОБУЧЕНИЯ</strong>
+    <div class="container">
+        <strong>СТОИМОСТЬ ОБУЧЕНИЯ</strong>
+    </div>
 </div>
 
 <div style="margin-bottom: 20px"></div>

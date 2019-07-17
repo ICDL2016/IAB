@@ -7,11 +7,27 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player1;
 
 function onYouTubeIframeAPIReady() {
-    player1 = new YT.Player('divPlayer1', {
-        height: '500',
-        width: '100%',
-        videoId: 'd8Oc90QevaI',
-    });
+
+    if($(window).width() < 451) {
+        player1 = new YT.Player('divPlayer1', {
+            height: '200',
+            width: '100%',
+            videoId: 'd8Oc90QevaI',
+        });
+    } else if($(window).width() < 992) {
+        player1 = new YT.Player('divPlayer1', {
+            height: '300',
+            width: '100%',
+            videoId: 'd8Oc90QevaI',
+        });
+    } else {
+        player1 = new YT.Player('divPlayer1', {
+            height: '500',
+            width: '100%',
+            videoId: 'd8Oc90QevaI',
+        });
+    }
+
 }
 
 function play1(event) {

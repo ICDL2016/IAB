@@ -2,7 +2,9 @@
 <?php require_once '_video.php'?>
 
 <div class="about-title course-title">
-    <strong>Об Академии</strong>
+    <div class="container">
+        <strong>Об Академии</strong>
+    </div>
 </div>
 
 <?php require_once '_study.php'?>

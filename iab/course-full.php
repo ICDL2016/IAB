@@ -143,14 +143,19 @@
 </section>
 
 <div class="course-title">
-    Дистанционный курс обучения
-    <strong>HR СТРАТЕГИЯ КОМПАНИИ</strong>
+    <div class="container">
+        Дистанционный курс обучения
+        <strong>HR СТРАТЕГИЯ КОМПАНИИ</strong>
+    </div>
 </div>
+
 <?php require '_form.php'?>
 
 <div class="course-other__title course-title">
-    Другие дистанционные курсы обучения раздела
-    <strong>Кулинария</strong>
+    <div class="container">
+        Другие дистанционные курсы обучения раздела
+        <strong>Кулинария</strong>
+    </div>
 </div>
 
 <div class="container">

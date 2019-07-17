@@ -29,35 +29,39 @@
 </section>
 
 <section class="contacts-block">
-    <div class="contacts-phone__title">Многоканальный телефон</div>
-    <div class="contacts-phone">+7 958 100 03 78</div>
+    <div class="container">
 
-    <div class="contacts-managers__title">Менеджеры учебного отдела</div>
-    <div class="contacts-managers">
-        <div class="contacts-manager">
-            <div class="contacts-manager__img">
-                <img src="img/contacts/person.png" alt="photo">
-            </div>
-            <div class="contacts-manager__name">Анастасия</div>
-        </div>
-        <div class="contacts-manager">
-            <div class="contacts-manager__img">
-                <img src="img/contacts/person.png" alt="photo">
-            </div>
-            <div class="contacts-manager__name">Дмитрий</div>
-        </div>
-        <div class="contacts-manager">
-            <div class="contacts-manager__img">
-                <img src="img/contacts/person.png" alt="photo">
-            </div>
-            <div class="contacts-manager__name">Яна</div>
-        </div>
-    </div>
+        <div class="contacts-phone__title">Многоканальный телефон</div>
+        <div class="contacts-phone">+7 958 100 03 78</div>
 
-    <div class="contacts-address__title">Адрес и схема проезда:</div>
-    <div class="contacts-address">г. Москва, (ст. метро Международная), <br>
-        Пресненская наб., д. 6, стр. 2, <br>
-        ММДЦ "Москва-Сити", Башня "Империя"
+        <div class="contacts-managers__title">Менеджеры учебного отдела</div>
+        <div class="contacts-managers">
+            <div class="contacts-manager">
+                <div class="contacts-manager__img">
+                    <img src="img/contacts/person.png" alt="photo">
+                </div>
+                <div class="contacts-manager__name">Анастасия</div>
+            </div>
+            <div class="contacts-manager">
+                <div class="contacts-manager__img">
+                    <img src="img/contacts/person.png" alt="photo">
+                </div>
+                <div class="contacts-manager__name">Дмитрий</div>
+            </div>
+            <div class="contacts-manager">
+                <div class="contacts-manager__img">
+                    <img src="img/contacts/person.png" alt="photo">
+                </div>
+                <div class="contacts-manager__name">Яна</div>
+            </div>
+        </div>
+
+        <div class="contacts-address__title">Адрес и схема проезда:</div>
+        <div class="contacts-address">г. Москва, (ст. метро Международная), <br>
+            Пресненская наб., д. 6, стр. 2, <br>
+            ММДЦ "Москва-Сити", Башня "Империя"
+        </div>
+
     </div>
 
     <script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A79af5c7e5a2cdb6cda6801bbda9bb4395b1c66e8249305f354a060b9edcc8c4f&amp;width=100%25&amp;height=507&amp;lang=ru_RU&amp;scroll=false"></script>

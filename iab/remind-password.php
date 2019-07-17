@@ -1,7 +1,9 @@
 <?php require_once '_header.php'?>
 
 <div class="remind-title course-title">
-    <strong>Восстановление пароля</strong>
+    <div class="container">
+        <strong>Восстановление пароля</strong>
+    </div>
 </div>
 
 <section class="form-wrap">

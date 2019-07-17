@@ -2,8 +2,10 @@
 <?php require_once '_video.php'?>
 
 <div class="course-title">
-    Дистанционный курс обучения
-    <strong>HR СТРАТЕГИЯ КОМПАНИИ</strong>
+    <div class="container">
+        Дистанционный курс обучения
+        <strong>HR СТРАТЕГИЯ КОМПАНИИ</strong>
+    </div>
 </div>
 
 <?php require_once '_form.php'?>

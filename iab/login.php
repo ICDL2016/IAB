@@ -1,7 +1,9 @@
 <?php require_once '_header.php'?>
 
 <div class="login-title course-title">
-    <strong>Вход в Личный кабинет</strong>
+    <div class="container">
+        <strong>Вход в Личный кабинет</strong>
+    </div>
 </div>
 
 <section class="form-wrap">
