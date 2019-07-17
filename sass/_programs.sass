@@ -1,0 +1,61 @@
+.directions
+    margin: 20px 0
+    &-block
+        margin-bottom: 10px
+        line-height: 1
+        width: 100%
+        height: 60px
+        text-align: center
+        color: #fff
+        padding: 5px 15px
+        background: $red
+        transition: background .3s
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        &:hover
+            background: $lightred
+
+.programs
+    display: flex
+    width: 100%
+    flex-wrap: wrap
+    &-wrap
+        display: none
+    &-block
+        display: flex
+        border: 5px solid #eee
+        height: 100px
+        width: 50%
+        transition: background .3s, color .3s
+        cursor: pointer
+        &__img
+            width: 135px
+            img
+                height: 100%
+        &__descr
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            padding: 10px
+            text-align: center
+            width: 100%
+            &-title
+                line-height: 1
+                color: $lightred
+                transition: color .3s
+            &-info
+                display: flex
+                justify-content: space-between
+                font-size: 12px
+                &__price
+                    &-old
+                        margin-right: 10px
+                        text-decoration: line-through
+        &:hover
+            background: $red
+            color: #fff
+            .programs-block__descr-title
+                color: #fff
+

@@ -1,0 +1,54 @@
+.course
+    text-align: center
+    &-title
+        text-align: center
+        font-size: 13px
+        padding: 10px 0
+        background: $red
+        color: #ffffff
+        strong
+            display: block
+            font-size: 18px
+    &-info
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 20px auto 0
+        width: 250px
+        font-size: 14px
+        &__price
+            display: flex
+            width: 120px
+            justify-content: space-between
+            align-items: center
+            &-old
+                text-decoration: line-through
+
+    &-program
+        margin-bottom: 20px
+        &__title
+            background: #888
+        &__block
+            background: $red
+            text-align: center
+            color: #ffffff
+            border: 2px solid #cccccc
+            transition: background .3s
+            cursor: pointer
+            &:hover
+                background: $lightred
+            &-descr
+                padding: 10px 15px
+                &__part, &__more
+                    font-size: 11px
+                &__title
+                    margin: 10px 0
+
+            &-img
+                img
+                    width: 100%
+
+    &-other
+        &__title
+            background: #ccc
+            color: #888
