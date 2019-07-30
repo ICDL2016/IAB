@@ -597,7 +597,8 @@ input:focus, textarea:focus {
     display: none; } }
 @media screen and (max-width: 467px) {
   .directions-block {
-    width: 100%; }
+    width: 180px;
+    font-size: 14px; }
 
   .programs-block {
     width: 100%; } }
@@ -620,5 +621,8 @@ input:focus, textarea:focus {
   .course-program__block {
     margin: 5px auto;
     width: 90%; } }
+@media screen and (max-width: 368px) {
+  .directions-block {
+    width: 100%; } }
 iframe {
   margin: auto; }
