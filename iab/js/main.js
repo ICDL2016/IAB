@@ -22,8 +22,8 @@ function onYouTubeIframeAPIReady() {
         });
     } else {
         player1 = new YT.Player('divPlayer1', {
-            height: '500',
-            width: '100%',
+            height: '400',
+            width: '80%',
             videoId: 'd8Oc90QevaI',
         });
     }
@@ -33,6 +33,7 @@ function onYouTubeIframeAPIReady() {
 function play1(event) {
     event.target.style.display = 'none';
     $('#divPlayer1').show();
+    $('iframe').css('display', 'block');
     player1.playVideo();
 }
 

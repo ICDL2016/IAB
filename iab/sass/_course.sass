@@ -28,11 +28,17 @@
         margin-bottom: 20px
         &__title
             background: #888
+        &__blocks
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            background: #ccc
         &__block
+            margin: 2px
+            width: 300px
             background: $red
             text-align: center
             color: #ffffff
-            border: 2px solid #cccccc
             transition: background .3s
             cursor: pointer
             &:hover

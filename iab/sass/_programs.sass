@@ -1,9 +1,17 @@
 .directions
-    margin: 20px 0
-    &-block
+    margin: 10px 0 20px
+    &-blocks
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+
+    &-title
+        font-size: 15px
         margin-bottom: 10px
+    &-block
+        margin: 2px
         line-height: 1
-        width: 100%
+        width: 300px
         height: 60px
         text-align: center
         color: #fff
@@ -17,24 +25,24 @@
         &:hover
             background: $lightred
 
-.directions-mobile
-    display: none
-
 .programs
     display: flex
+    justify-content: center
     width: 100%
     flex-wrap: wrap
+    background: #eeeeee
     &-wrap
         display: none
     &-block
         display: flex
-        border: 5px solid #eee
+        background: #fff
+        margin: 3px
         height: 100px
-        width: 50%
+        width: 49%
         transition: background .3s, color .3s
         cursor: pointer
         &__img
-            width: 135px
+            width: 160px
             img
                 height: 100%
         &__descr

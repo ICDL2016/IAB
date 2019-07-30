@@ -2,6 +2,7 @@
     .video
         &-block
             height: 300px
+            width: 100%
     .programs
         &-block
             &__descr
@@ -18,11 +19,10 @@
 @media screen and (max-width: 767px)
     .directions
         &-block
-            padding: 5px
-            font-size: 12px
+            width: 270px
     .programs
         &-block
-            margin: auto
+            margin: 3px auto
             width: 90%
     .form
         &-descr
@@ -35,20 +35,22 @@
             &__name
                 font-size: 13px
 
+    .course
+        &-program
+            &__block
+                width: 190px
+
+
 
 @media screen and (max-width: 575px)
+
+    .directions
+        &-block
+            width: 230px
 
     .error404
         &-descr
             width: 100%
-
-    .directions
-        &-desktop
-            display: none
-        &-mobile
-            display: block
-        &-block
-            font-size: 14px
 
     .video
         &-block
@@ -67,6 +69,15 @@
             display: none
 
 
+
+@media screen and (max-width: 467px)
+    .directions
+        &-block
+            width: 100%
+    .programs
+        &-block
+            width: 100%
+
 @media screen and (max-width: 450px)
     .form, .or-choose__btn, .icons, .contacts-textarea
         width: 100%
@@ -76,7 +87,6 @@
             padding: 5px 3px
             width: 30px
 
-
     .video
         &-block
             height: 200px
@@ -85,6 +95,14 @@
             height: 80px
             &__img
                 display: none
+
+
+@media screen and (max-width: 400px)
+    .course
+        &-program
+            &__block
+                margin: 5px auto
+                width: 90%
 
 
 
