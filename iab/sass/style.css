@@ -75,7 +75,7 @@ input:focus, textarea:focus {
   .header-logo {
     margin-right: 20px; }
     .header-logo img {
-      width: 100px; }
+      width: 400px; }
   .header-hat {
     font-size: 30px;
     transition: color 0.3s; }
@@ -129,47 +129,52 @@ input:focus, textarea:focus {
   .directions-blocks {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    position: relative; }
   .directions-title {
     font-size: 15px;
     margin-bottom: 10px; }
   .directions-block {
     margin: 2px;
     line-height: 1;
-    width: 300px;
-    height: 60px;
+    width: 250px;
+    height: 45px;
     text-align: center;
     color: #fff;
-    padding: 5px 15px;
-    background: #800000;
+    padding: 5px;
+    font-size: 14px;
+    background: #b70018;
     transition: background 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer; }
     .directions-block:hover {
-      background: #b70018; }
+      background: #800000; }
 
 .programs {
   display: flex;
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
-  background: #eeeeee; }
+  background: #ddd; }
   .programs-wrap {
-    display: none; }
+    display: none;
+    position: absolute; }
   .programs-block {
     display: flex;
     background: #fff;
     margin: 3px;
     height: 100px;
-    width: 49%;
+    width: 450px;
     transition: background 0.3s, color 0.3s;
     cursor: pointer; }
     .programs-block__img {
-      width: 160px; }
-      .programs-block__img img {
-        height: 100%; }
+      background-size: cover;
+      background: url(../img/programms/1.jpg) center no-repeat;
+      width: 200px; }
+      .programs-block__img2 {
+        background: url(../img/programms/2.jpg) center no-repeat; }
     .programs-block__descr {
       display: flex;
       flex-direction: column;
@@ -179,15 +184,18 @@ input:focus, textarea:focus {
       width: 100%; }
       .programs-block__descr-title {
         line-height: 1;
-        color: #b70018;
+        color: #800000;
         transition: color 0.3s; }
       .programs-block__descr-info {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         font-size: 12px; }
         .programs-block__descr-info__price-old {
           margin-right: 10px;
           text-decoration: line-through; }
+        .programs-block__descr-info__price-new {
+          font-size: 15px; }
     .programs-block:hover {
       background: #800000;
       color: #fff; }
@@ -300,13 +308,13 @@ input:focus, textarea:focus {
       background: #b70018; }
     .form-bottom__top {
       margin-bottom: 10px;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 700; }
     .form-bottom__second {
-      font-size: 14px; }
+      font-size: 13px; }
     .form-bottom__date {
       margin-top: 10px;
-      font-size: 12px; }
+      font-size: 11px; }
   .form-descr {
     margin: auto;
     width: 600px;
@@ -414,27 +422,33 @@ input:focus, textarea:focus {
     justify-content: space-between;
     align-items: center;
     margin: 20px auto 0;
-    width: 250px;
+    width: 280px;
     font-size: 14px; }
     .course-info__price {
       display: flex;
-      width: 120px;
+      width: 130px;
       justify-content: space-between;
       align-items: center; }
       .course-info__price-old {
+        margin-right: 5px;
         text-decoration: line-through; }
+      .course-info__price-new {
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: -2px; }
   .course-program {
-    margin-bottom: 20px; }
+    padding-bottom: 20px;
+    background: #ddd; }
     .course-program__title {
       background: #888; }
     .course-program__blocks {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      background: #ccc; }
+      background: #ddd; }
     .course-program__block {
       margin: 2px;
-      width: 300px;
+      width: 250px;
       background: #800000;
       text-align: center;
       color: #ffffff;
@@ -447,11 +461,13 @@ input:focus, textarea:focus {
         .course-program__block-descr__part, .course-program__block-descr__more {
           font-size: 11px; }
         .course-program__block-descr__title {
-          margin: 10px 0; }
+          margin: 5px 0;
+          line-height: 1;
+          font-size: 15px; }
       .course-program__block-img img {
         width: 100%; }
   .course-other__title {
-    background: #ccc;
+    background: #ddd;
     color: #888; }
 
 .about-title {
@@ -548,8 +564,10 @@ input:focus, textarea:focus {
     height: 300px;
     width: 100%; }
 
-  .programs-block__descr {
-    font-size: 11px; }
+  .programs-block {
+    width: 350px; }
+    .programs-block__descr {
+      font-size: 12px; }
 
   .contacts-managers {
     width: 600px; }
@@ -558,10 +576,6 @@ input:focus, textarea:focus {
 @media screen and (max-width: 767px) {
   .directions-block {
     width: 270px; }
-
-  .programs-block {
-    margin: 3px auto;
-    width: 90%; }
 
   .form-descr {
     width: 100%; }
@@ -574,7 +588,20 @@ input:focus, textarea:focus {
       font-size: 13px; }
 
   .course-program__block {
-    width: 190px; } }
+    width: 190px; }
+
+  .programs-block {
+    width: 300px;
+    height: 80px; }
+    .programs-block__img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 120px; }
+      .programs-block__img img {
+        width: 100%;
+        height: auto;
+        align-self: center; } }
 @media screen and (max-width: 575px) {
   .directions-block {
     width: 230px; }
@@ -582,6 +609,8 @@ input:focus, textarea:focus {
   .error404-descr {
     width: 100%; }
 
+  .video .container {
+    padding: 0; }
   .video-block::after {
     border: 30px solid transparent;
     border-left: 50px solid #800000; }
@@ -593,15 +622,17 @@ input:focus, textarea:focus {
       margin-bottom: 10px;
       width: 50%; }
 
+  .header-logo img {
+    width: 300px; }
   .header-title {
-    display: none; } }
+    display: none; }
+
+  .programs-block {
+    width: 300px; } }
 @media screen and (max-width: 467px) {
   .directions-block {
     width: 180px;
-    font-size: 14px; }
-
-  .programs-block {
-    width: 100%; } }
+    font-size: 14px; } }
 @media screen and (max-width: 450px) {
   .form, .or-choose__btn, .icons, .contacts-textarea {
     width: 100%; }
@@ -618,11 +649,25 @@ input:focus, textarea:focus {
     .programs-block__img {
       display: none; } }
 @media screen and (max-width: 400px) {
+  .header-logo {
+    margin: 0; }
+    .header-logo img {
+      width: 240px; }
+
   .course-program__block {
     margin: 5px auto;
     width: 90%; } }
 @media screen and (max-width: 368px) {
   .directions-block {
-    width: 100%; } }
+    width: 100%; }
+
+  .form-bottom__top {
+    font-size: 18px; } }
 iframe {
   margin: auto; }
+
+.red {
+  background: #800000 !important; }
+
+.margin-helper {
+  margin-bottom: 2px !important; }

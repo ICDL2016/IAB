@@ -4,47 +4,51 @@
         display: flex
         flex-wrap: wrap
         justify-content: center
-
+        position: relative
     &-title
         font-size: 15px
         margin-bottom: 10px
     &-block
         margin: 2px
         line-height: 1
-        width: 300px
-        height: 60px
+        width: 250px
+        height: 45px
         text-align: center
         color: #fff
-        padding: 5px 15px
-        background: $red
+        padding: 5px
+        font-size: 14px
+        background: $lightred
         transition: background .3s
         display: flex
         align-items: center
         justify-content: center
         cursor: pointer
         &:hover
-            background: $lightred
+            background: $red
 
 .programs
     display: flex
     justify-content: center
     width: 100%
     flex-wrap: wrap
-    background: #eeeeee
+    background: #ddd
     &-wrap
         display: none
+        position: absolute
     &-block
         display: flex
         background: #fff
         margin: 3px
         height: 100px
-        width: 49%
+        width: 450px
         transition: background .3s, color .3s
         cursor: pointer
         &__img
-            width: 160px
-            img
-                height: 100%
+            background-size: cover
+            background: url(../img/programms/1.jpg) center no-repeat
+            width: 200px
+            &2
+                background: url(../img/programms/2.jpg) center no-repeat
         &__descr
             display: flex
             flex-direction: column
@@ -54,16 +58,19 @@
             width: 100%
             &-title
                 line-height: 1
-                color: $lightred
+                color: $red
                 transition: color .3s
             &-info
                 display: flex
                 justify-content: space-between
+                align-items: center
                 font-size: 12px
                 &__price
                     &-old
                         margin-right: 10px
                         text-decoration: line-through
+                    &-new
+                        font-size: 15px
         &:hover
             background: $red
             color: #fff

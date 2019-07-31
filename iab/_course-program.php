@@ -1,6 +1,6 @@
 <section class="course-program">
     <div class="course-title course-program__title">
-        Программа дистанционного курс обучения
+        Программа дистанционного курса обучения
         <strong>HR СТРАТЕГИЯ КОМПАНИИ</strong>
     </div>
 

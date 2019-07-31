@@ -1,7 +1,6 @@
 <div class="programs">
     <div class="programs-block">
         <div class="programs-block__img">
-            <img src="img/programms/1.jpg" alt="photo">
         </div>
         <div class="programs-block__descr">
             <div class="programs-block__descr-title">
@@ -17,8 +16,7 @@
         </div>
     </div>
     <div class="programs-block">
-        <div class="programs-block__img">
-            <img src="img/programms/2.jpg" alt="photo">
+        <div class="programs-block__img programs-block__img2">
         </div>
         <div class="programs-block__descr">
             <div class="programs-block__descr-title">
@@ -35,7 +33,6 @@
     </div>
     <div class="programs-block">
         <div class="programs-block__img">
-            <img src="img/programms/3.jpg" alt="photo">
         </div>
         <div class="programs-block__descr">
             <div class="programs-block__descr-title">
@@ -51,8 +48,7 @@
         </div>
     </div>
     <div class="programs-block">
-        <div class="programs-block__img">
-            <img src="img/programms/4.jpg" alt="photo">
+        <div class="programs-block__img programs-block__img2">
         </div>
         <div class="programs-block__descr">
             <div class="programs-block__descr-title">
@@ -69,7 +65,6 @@
     </div>
     <div class="programs-block">
         <div class="programs-block__img">
-            <img src="img/programms/5.jpg" alt="photo">
         </div>
         <div class="programs-block__descr">
             <div class="programs-block__descr-title">
@@ -85,8 +80,7 @@
         </div>
     </div>
     <div class="programs-block">
-        <div class="programs-block__img">
-            <img src="img/programms/6.jpg" alt="photo">
+        <div class="programs-block__img programs-block__img2">
         </div>
         <div class="programs-block__descr">
             <div class="programs-block__descr-title">

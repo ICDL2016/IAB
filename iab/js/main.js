@@ -37,15 +37,27 @@ function play1(event) {
     player1.playVideo();
 }
 
-$('.directions-block').on('click', function () {
-    let programsWrap = document.querySelectorAll('.programs-wrap');
-    $('.programs-wrap[data-program='+ $(this).attr('data-program') +']').slideToggle(200);
-    for (let i=0; i<programsWrap.length; i++) {
-        if (programsWrap[i].getAttribute('data-program') !== $(this).attr('data-program')) {
-            programsWrap[i].style.display = 'none';
-        }
-    }
-});
+// блоки
+let directionsBlock = document.querySelectorAll('.directions-block');
+for (let i=0; i<directionsBlock.length; i++) {
+    directionsBlock[i].addEventListener('click', function () {
+
+        $('.programs-wrap[data-program!='+ $(this).attr('data-program') +']').hide();
+        $('.directions-block[data-program!='+ $(this).attr('data-program') +']').removeClass('red').addClass('margin-helper');
+
+        let directionsTop = document.querySelector('.directions-blocks').getBoundingClientRect().top;
+        let blockTop =  this.getBoundingClientRect().top;
+        let marginFromTop = blockTop - directionsTop;
+        this.classList.toggle('red');
+        this.classList.toggle('margin-helper');
+
+        $('.programs-wrap[data-program='+ $(this).attr('data-program') +']').css('top', +marginFromTop + 45 + 'px').toggle();
+        let blockHeight = $('.programs-wrap[data-program='+ $(this).attr('data-program') +']').height();
+        this.style.marginBottom = blockHeight+'px';
+
+    });
+}
+
 
 // псевдовалидация
 
