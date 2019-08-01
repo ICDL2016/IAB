@@ -66,3 +66,23 @@
         &__title
             background: #ddd
             color: #888
+
+    &-modal
+        display: none
+        padding: 25px 15px
+        background: #ddd
+        z-index: 100
+        position: fixed
+        width: 600px
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        &__title
+            text-align: center
+            font-size: 18px
+            font-weight: 700
+            color: $red
+        &__list
+            font-size: 15px
+            li
+                margin: 5px 0

@@ -13,13 +13,38 @@
 @import "about"
 @import "contacts"
 @import "help-pages"
+@import "catalog"
+@import "profession"
 @import "media"
 
 iframe
     margin: auto
 
 .red
-    background: $red!important
+    background: $lightred!important
 
 .margin-helper
     margin-bottom: 2px!important
+
+.red-catalog
+    background: $lightred!important
+    color: #fff!important
+
+.overlay
+    display: none
+    position: fixed
+    z-index: 99
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background: rgba(#000, .5)
+
+.modal
+    &-close
+        top: 5px
+        right: 10px
+        font-weight: 700
+        font-size: 20px
+        position: absolute
+        cursor: pointer

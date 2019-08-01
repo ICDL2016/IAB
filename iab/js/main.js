@@ -58,6 +58,40 @@ for (let i=0; i<directionsBlock.length; i++) {
     });
 }
 
+// блоки каталогов
+let catBlock = document.querySelectorAll('.catalog-block');
+for (let i=0; i<catBlock.length; i++) {
+    catBlock[i].addEventListener('click', function () {
+
+        $('.catalog-option[data-catalog!='+ $(this).attr('data-catalog') +']').hide();
+        $('.catalog-block[data-catalog!='+ $(this).attr('data-catalog') +']').removeClass('red-catalog').addClass('margin-helper');
+
+        let directionsTop = document.querySelector('.directions-blocks').getBoundingClientRect().top;
+        let blockTop =  this.getBoundingClientRect().top;
+        let marginFromTop = blockTop - directionsTop;
+
+        this.classList.toggle('red-catalog');
+        this.classList.toggle('margin-helper');
+
+        $('.catalog-option[data-catalog='+ $(this).attr('data-catalog') +']').css('top', +marginFromTop + 45 + 'px').toggle();
+        let blockHeight = $('.catalog-option[data-catalog='+ $(this).attr('data-catalog') +']').height();
+        this.style.marginBottom = blockHeight+'px';
+    });
+}
+
+//модалка
+$('.course-program__block').on('click', function () {
+    $('.overlay').show();
+    $('.course-modal').fadeIn();
+    $('body').css('overflow', 'hidden');
+});
+
+$('.overlay, .modal-close').on('click', function () {
+    $('.overlay').fadeOut();
+    $('.course-modal').fadeOut();
+    $('body').css('overflow', 'visible');
+});
+
 
 // псевдовалидация
 

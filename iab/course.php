@@ -34,4 +34,6 @@
 <?php require_once '_menu.php'?>
 <?php require_once '_icons.php'?>
 <?php require_once '_comments.php'?>
+<?php require_once '_modal.php'?>
+
 <?php require_once '_footer.php'?>
