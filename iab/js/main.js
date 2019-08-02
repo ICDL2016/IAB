@@ -93,6 +93,35 @@ $('.overlay, .modal-close').on('click', function () {
 });
 
 
+
+// ресайзы экрана
+window.onresize = function() {
+    let programsWrap = document.querySelectorAll('.programs-wrap');
+    let directionsBlock = document.querySelectorAll('.directions-block');
+    for (let i=0; i<programsWrap.length; i++) {
+        if (+programsWrap[i].style.top.replace('px', '') > 0) {
+            let directionsTop = document.querySelector('.directions-blocks').getBoundingClientRect().top;
+            let blockTop =  directionsBlock[i].getBoundingClientRect().top;
+            let marginFromTop = blockTop - directionsTop;
+            programsWrap[i].style.top = +marginFromTop + 45 + 'px';
+            directionsBlock[i].style.marginBottom = getComputedStyle(programsWrap[i]).height;
+        }
+    }
+
+    let catalogOption = document.querySelectorAll('.catalog-option');
+    let catalogBlock = document.querySelectorAll('.catalog-block');
+    for (let i=0; i<catalogOption.length; i++) {
+        if (+catalogOption[i].style.top.replace('px', '') > 0) {
+            let catalogTop = document.querySelector('.catalog-block').getBoundingClientRect().top;
+            let blockTop =  catalogBlock[i].getBoundingClientRect().top;
+            let marginFromTop = blockTop - catalogTop;
+            catalogOption[i].style.top = +marginFromTop + 45 + 'px';
+            catalogBlock[i].style.marginBottom = getComputedStyle(catalogOption[i]).height;
+        }
+    }
+};
+
+
 // псевдовалидация
 
 let emptyTop = false;

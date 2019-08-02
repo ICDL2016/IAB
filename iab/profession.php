@@ -1,3 +1,4 @@
+<?php $title = "Профессия" ?>
 <?php require_once '_header.php'?>
 
 <div class="profession-start"></div>

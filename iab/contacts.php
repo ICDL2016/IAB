@@ -1,3 +1,4 @@
+<?php $title = "Контакты" ?>
 <?php require_once '_header.php'?>
 
 <div class="contacts-title course-title">

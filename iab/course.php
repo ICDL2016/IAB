@@ -1,3 +1,5 @@
+<?php $title = "Курс" ?>
+
 <?php require_once '_header.php'?>
 <?php require_once '_video.php'?>
 

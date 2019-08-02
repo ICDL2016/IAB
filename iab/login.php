@@ -1,3 +1,4 @@
+<?php $title = "Вход в личный кабинет" ?>
 <?php require_once '_header.php'?>
 
 <div class="login-title course-title">

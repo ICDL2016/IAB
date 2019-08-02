@@ -1,3 +1,4 @@
+<?php $title = "Восстановление пароля" ?>
 <?php require_once '_header.php'?>
 
 <div class="remind-title course-title">

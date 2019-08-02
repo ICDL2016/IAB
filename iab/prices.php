@@ -1,3 +1,4 @@
+<?php $title = "Цены" ?>
 <?php require_once '_header.php'?>
 
 <div class="prices-title course-title">

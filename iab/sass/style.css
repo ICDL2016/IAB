@@ -697,6 +697,13 @@ input:focus, textarea:focus {
   .profession-start {
     height: 350px; } }
 @media screen and (max-width: 767px) {
+  .study-img {
+    flex-wrap: wrap;
+    align-items: center; }
+    .study-img a {
+      margin: 5px;
+      width: 45%; }
+
   .course-modal {
     width: 500px; }
     .course-modal__list {
@@ -731,7 +738,7 @@ input:focus, textarea:focus {
     height: 200px;
     background-position-x: 50%; }
 
-  .directions-block {
+  .directions-block, .catalog-block {
     width: 230px; }
 
   .error404-descr {
@@ -742,13 +749,8 @@ input:focus, textarea:focus {
   .video-block::after {
     border: 30px solid transparent;
     border-left: 50px solid #800000; }
-
-  .study-img {
-    flex-direction: column;
-    align-items: center; }
-    .study-img a {
-      margin-bottom: 10px;
-      width: 50%; }
+  .video-block:hover::after {
+    border-left: 50px solid #b70018; }
 
   .header-logo img {
     width: 300px; }
@@ -778,7 +780,7 @@ input:focus, textarea:focus {
   .catalog-option {
     width: 100%; } }
 @media screen and (max-width: 467px) {
-  .directions-block {
+  .directions-block, .catalog-block {
     width: 180px;
     font-size: 14px; } }
 @media screen and (max-width: 450px) {
@@ -793,12 +795,7 @@ input:focus, textarea:focus {
     width: 30px; }
 
   .video-block {
-    height: 200px; }
-
-  .programs-block {
-    height: 80px; }
-    .programs-block__img {
-      display: none; } }
+    height: 200px; } }
 @media screen and (max-width: 400px) {
   .header-logo {
     margin: 0; }
@@ -809,7 +806,7 @@ input:focus, textarea:focus {
     margin: 5px auto;
     width: 90%; } }
 @media screen and (max-width: 368px) {
-  .directions-block {
+  .directions-block, .catalog-block {
     width: 100%; }
 
   .form-bottom__top {

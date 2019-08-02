@@ -1,3 +1,5 @@
+<?php $title = "Каталог профессий" ?>
+
 <?php require_once '_header.php'?>
 
 <div class="catalog-title">

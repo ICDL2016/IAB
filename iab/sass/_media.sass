@@ -18,6 +18,14 @@
 
 @media screen and (max-width: 767px)
 
+    .study
+        &-img
+            flex-wrap: wrap
+            align-items: center
+            a
+                margin: 5px
+                width: 45%
+
     .course
         &-modal
             width: 500px
@@ -61,7 +69,7 @@
             height: 200px
             background-position-x: 50%
 
-    .directions
+    .directions, .catalog
         &-block
             width: 230px
 
@@ -76,13 +84,10 @@
             &::after
                 border: 30px solid transparent
                 border-left: 50px solid #800000
-    .study
-        &-img
-            flex-direction: column
-            align-items: center
-            a
-                margin-bottom: 10px
-                width: 50%
+            &:hover
+                &::after
+                    border-left: 50px solid $lightred
+
     .header
         &-logo
             img
@@ -118,7 +123,7 @@
 
 
 @media screen and (max-width: 467px)
-    .directions
+    .directions, .catalog
         &-block
             width: 180px
             font-size: 14px
@@ -138,11 +143,6 @@
     .video
         &-block
             height: 200px
-    .programs
-        &-block
-            height: 80px
-            &__img
-                display: none
 
 
 @media screen and (max-width: 400px)
@@ -162,7 +162,7 @@
 
 
 @media screen and (max-width: 368px)
-    .directions
+    .directions, .catalog
         &-block
             width: 100%
 
