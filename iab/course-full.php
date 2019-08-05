@@ -23,12 +23,19 @@
 
 <?php require_once '_course-program.php'?>
 
-<div class="course-title">
-    <div class="container">
+<section class="course">
+    <div class="course-title">
         Дистанционный курс обучения
         <strong>HR СТРАТЕГИЯ КОМПАНИИ</strong>
+        <div class="course-info">
+            <div class="course-info__hours">190 ч.</div>
+            <div class="course-info__price">
+                <div class="course-info__price-old">35000 &#8381;</div>
+                <div class="course-info__price-new">17500 &#8381;</div>
+            </div>
+        </div>
     </div>
-</div>
+</section>
 
 <?php require '_form.php'?>
 

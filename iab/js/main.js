@@ -80,10 +80,23 @@ for (let i=0; i<catBlock.length; i++) {
 }
 
 //модалка
+
+let popup = document.querySelector('.course-modal');
+var popupHeight = 0;
+
 $('.course-program__block').on('click', function () {
     $('.overlay').show();
     $('.course-modal').fadeIn();
     $('body').css('overflow', 'hidden');
+    popupHeight = +getComputedStyle(popup).height.replace('px', '');
+
+    if (popupHeight > ($(window).height()-50)) {
+        popup.style.overflow = 'scroll';
+        popup.style.height = '95%';
+    } else {
+        popup.style.overflow = 'visible';
+        popup.style.height = popupHeight + 'px';
+    }
 });
 
 $('.overlay, .modal-close').on('click', function () {
@@ -91,7 +104,6 @@ $('.overlay, .modal-close').on('click', function () {
     $('.course-modal').fadeOut();
     $('body').css('overflow', 'visible');
 });
-
 
 
 // ресайзы экрана
@@ -105,6 +117,7 @@ window.onresize = function() {
             let marginFromTop = blockTop - directionsTop;
             programsWrap[i].style.top = +marginFromTop + 45 + 'px';
             directionsBlock[i].style.marginBottom = getComputedStyle(programsWrap[i]).height;
+            break;
         }
     }
 
@@ -117,6 +130,17 @@ window.onresize = function() {
             let marginFromTop = blockTop - catalogTop;
             catalogOption[i].style.top = +marginFromTop + 45 + 'px';
             catalogBlock[i].style.marginBottom = getComputedStyle(catalogOption[i]).height;
+            break;
+        }
+    }
+
+    if (popup) {
+        if (popupHeight > ($(window).height()-50)) {
+            popup.style.overflow = 'scroll';
+            popup.style.height = '95%';
+        } else {
+            popup.style.overflow = 'visible';
+            popup.style.height = popupHeight + 'px';
         }
     }
 };

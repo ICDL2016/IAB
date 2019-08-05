@@ -18,7 +18,7 @@
             </div>
 
             <div class="login-submit">
-                <span class="form-bottom__top contacts-submit">Отправить</span>
+                <span class="form-bottom__top contacts-submit">Вход</span>
             </div>
 
             <div class="login-forgot">
