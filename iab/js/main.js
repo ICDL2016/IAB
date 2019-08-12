@@ -22,8 +22,8 @@ function onYouTubeIframeAPIReady() {
         });
     } else {
         player1 = new YT.Player('divPlayer1', {
-            height: '400',
-            width: '80%',
+            height: '300',
+            width: '600px',
             videoId: 'd8Oc90QevaI',
         });
     }
