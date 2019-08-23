@@ -476,6 +476,10 @@ input:focus, textarea:focus {
       .course-program__block:hover {
         background: #b70018; }
       .course-program__block-descr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100px;
         padding: 10px 15px; }
         .course-program__block-descr__part, .course-program__block-descr__more {
           font-size: 11px; }

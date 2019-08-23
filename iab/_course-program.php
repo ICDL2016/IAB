@@ -11,7 +11,7 @@
             </div>
             <div class="course-program__block-descr">
                 <div class="course-program__block-descr__part">Часть 1</div>
-                <div class="course-program__block-descr__title">Основы управления человеческими ресурсами</div>
+                <div class="course-program__block-descr__title">Основы управления человеческими ресурсами тест тест тест</div>
                 <div class="course-program__block-descr__more">Подробнее</div>
             </div>
         </div>
@@ -22,7 +22,7 @@
             </div>
             <div class="course-program__block-descr">
                 <div class="course-program__block-descr__part">Часть 2</div>
-                <div class="course-program__block-descr__title">Основы управления человеческими ресурсами</div>
+                <div class="course-program__block-descr__title">Основы управления человеческими ресурсами тест тест</div>
                 <div class="course-program__block-descr__more">Подробнее</div>
             </div>
         </div>
@@ -33,7 +33,7 @@
             </div>
             <div class="course-program__block-descr">
                 <div class="course-program__block-descr__part">Часть 3</div>
-                <div class="course-program__block-descr__title">Основы управления человеческими ресурсами</div>
+                <div class="course-program__block-descr__title">Основы управления человеческими ресурсами тестирование теста</div>
                 <div class="course-program__block-descr__more">Подробнее</div>
             </div>
         </div>
@@ -44,7 +44,7 @@
             </div>
             <div class="course-program__block-descr">
                 <div class="course-program__block-descr__part">Часть 4</div>
-                <div class="course-program__block-descr__title">Основы управления человеческими ресурсами</div>
+                <div class="course-program__block-descr__title">Основы управления человеческими ресурсами тестирование те</div>
                 <div class="course-program__block-descr__more">Подробнее</div>
             </div>
         </div>
@@ -55,7 +55,7 @@
             </div>
             <div class="course-program__block-descr">
                 <div class="course-program__block-descr__part">Часть 5</div>
-                <div class="course-program__block-descr__title">Основы управления человеческими ресурсами</div>
+                <div class="course-program__block-descr__title">Основы управления человеческими ресурсами тест</div>
                 <div class="course-program__block-descr__more">Подробнее</div>
             </div>
         </div>
@@ -88,7 +88,7 @@
             </div>
             <div class="course-program__block-descr">
                 <div class="course-program__block-descr__part">Часть 8</div>
-                <div class="course-program__block-descr__title">Основы управления человеческими ресурсами</div>
+                <div class="course-program__block-descr__title">Основы управления человеческими ресурсами тест тест тест тест</div>
                 <div class="course-program__block-descr__more">Подробнее</div>
             </div>
         </div>
