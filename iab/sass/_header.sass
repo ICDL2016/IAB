@@ -4,6 +4,10 @@
     align-items: center
     padding: 5px 15px
     width: 100%
+    position: fixed
+    top: 0
+    left: 0
+    background: #fff
     &-logo
         margin-right: 20px
         img
@@ -11,8 +15,9 @@
     &-hat
         font-size: 30px
         transition: color .3s
-        &:hover
-            color: $red
+        i
+            &:hover
+                color: $red
 
     &-left
         display: flex
