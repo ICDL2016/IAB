@@ -15,7 +15,7 @@
   box-sizing: border-box; }
 
 body {
-  margin: 70px 0 0 0;
+  margin: 0;
   font-family: "ArialMT", sans-serif;
   color: #444; }
 
@@ -70,12 +70,7 @@ input:focus, textarea:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 15px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #fff; }
+  padding: 5px 15px; }
   .header-logo {
     margin-right: 20px; }
     .header-logo img {
