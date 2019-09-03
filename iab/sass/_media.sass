@@ -1,14 +1,8 @@
 @media screen and (max-width: 991px)
     .video
-        &-block
+        &-wrapper
             height: 300px
             width: 100%
-
-    .contacts
-        &-managers
-            width: 600px
-        &-manager
-            width: 200px
 
     .profession
         &-start
@@ -43,12 +37,9 @@
         &-descr
             width: 100%
     .contacts
-        &-managers
-            width: 100%
         &-manager
-            width: 33%
-            &__name
-                font-size: 13px
+            display: block
+            margin: 0 auto 20px
 
     .course
         &-program
@@ -81,12 +72,10 @@
         .container
             padding: 0
         &-block
-            &::after
-                border: 30px solid transparent
-                border-left: 50px solid #800000
+            border: 30px solid transparent
+            border-left: 50px solid #800000
             &:hover
-                &::after
-                    border-left: 50px solid $lightred
+                border-left: 50px solid $lightred
 
     .header
         padding: 5px
@@ -142,7 +131,7 @@
             width: 30px
 
     .video
-        &-block
+        &-wrapper
             height: 200px
 
 

@@ -67,21 +67,19 @@
 
     <script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A79af5c7e5a2cdb6cda6801bbda9bb4395b1c66e8249305f354a060b9edcc8c4f&amp;width=100%25&amp;height=507&amp;lang=ru_RU&amp;scroll=false"></script>
 
-    <div class="container">
-        <div class="contacts-gallery">
-            <a href="img/contacts/1.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/1.jpg" alt="photo"></a>
-            <a href="img/contacts/2.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/2.jpg" alt="photo"></a>
-            <a href="img/contacts/3.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/3.jpg" alt="photo"></a>
-            <a href="img/contacts/4.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/4.jpg" alt="photo"></a>
-            <a href="img/contacts/1.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/1.jpg" alt="photo"></a>
-            <a href="img/contacts/2.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/2.jpg" alt="photo"></a>
-            <a href="img/contacts/3.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/3.jpg" alt="photo"></a>
-            <a href="img/contacts/4.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/4.jpg" alt="photo"></a>
-            <a href="img/contacts/1.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/1.jpg" alt="photo"></a>
-            <a href="img/contacts/2.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/2.jpg" alt="photo"></a>
-            <a href="img/contacts/3.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/3.jpg" alt="photo"></a>
-            <a href="img/contacts/4.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/4.jpg" alt="photo"></a>
-        </div>
+    <div class="contacts-gallery">
+        <a href="img/contacts/1.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/1.jpg" alt="photo"></a>
+        <a href="img/contacts/2.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/2.jpg" alt="photo"></a>
+        <a href="img/contacts/3.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/3.jpg" alt="photo"></a>
+        <a href="img/contacts/4.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/4.jpg" alt="photo"></a>
+<!--            <a href="img/contacts/1.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/1.jpg" alt="photo"></a>-->
+<!--            <a href="img/contacts/2.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/2.jpg" alt="photo"></a>-->
+<!--            <a href="img/contacts/3.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/3.jpg" alt="photo"></a>-->
+<!--            <a href="img/contacts/4.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/4.jpg" alt="photo"></a>-->
+<!--            <a href="img/contacts/1.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/1.jpg" alt="photo"></a>-->
+<!--            <a href="img/contacts/2.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/2.jpg" alt="photo"></a>-->
+<!--            <a href="img/contacts/3.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/3.jpg" alt="photo"></a>-->
+<!--            <a href="img/contacts/4.jpg" class="fancybox-buttons" data-fancybox-group="button"><img src="img/contacts/4.jpg" alt="photo"></a>-->
     </div>
 </section>
 

@@ -96,7 +96,7 @@ input:focus, textarea:focus {
 
 .video {
   background: #ddd; }
-  .video-block {
+  .video-wrapper {
     margin: auto;
     width: 100%;
     background: url(../img/iab-video.jpg) center no-repeat;
@@ -104,20 +104,18 @@ input:focus, textarea:focus {
     background-size: cover;
     background-position-y: 0;
     height: 300px;
-    position: relative;
-    pointer-events: none; }
-    .video-block::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 45%;
-      transform: translateY(-50%);
-      border: 50px solid transparent;
-      border-left: 80px solid #800000;
-      pointer-events: all;
-      cursor: pointer;
-      transition: border 0.3s; }
-    .video-block:hover::after {
+    position: relative; }
+  .video-block {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translateY(-50%);
+    border: 50px solid transparent;
+    border-left: 80px solid #800000;
+    cursor: pointer;
+    transition: border 0.3s; }
+    .video-block:hover {
       border-left: 80px solid #b70018; }
 
 #divPlayer1 {
@@ -522,7 +520,6 @@ input:focus, textarea:focus {
   width: 400px; }
 .contacts-block {
   background: #ccc;
-  padding: 10px 0;
   text-align: center; }
 .contacts-phone {
   margin-bottom: 20px;
@@ -533,15 +530,15 @@ input:focus, textarea:focus {
     font-size: 12px;
     opacity: 0.5; }
 .contacts-managers {
-  display: flex;
-  margin: 0 auto 20px;
-  width: 900px; }
+  text-align: center;
+  margin: 0 auto 20px; }
   .contacts-managers__title {
     font-size: 12px;
     opacity: 0.5; }
 .contacts-manager {
+  display: inline-block;
   padding: 10px;
-  width: 300px; }
+  width: 200px; }
   .contacts-manager__img img {
     width: 100%; }
   .contacts-manager__name {
@@ -555,10 +552,14 @@ input:focus, textarea:focus {
   .contacts-address__title {
     color: #800000; }
 .contacts-gallery {
-  margin-top: 10px; }
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 20px auto; }
   .contacts-gallery img {
-    margin-bottom: 5px;
-    width: 220px; }
+    margin-bottom: 4px;
+    width: 300px;
+    height: 200px;
+    display: inline-block; }
 
 .error404 {
   text-align: center;
@@ -836,14 +837,9 @@ input:focus, textarea:focus {
     .personal-form__block-title input, .personal-form__block-title textarea, .personal-form__block-message input, .personal-form__block-message textarea, .personal-form__block-file input, .personal-form__block-file textarea {
       width: 100%; } }
 @media screen and (max-width: 991px) {
-  .video-block {
+  .video-wrapper {
     height: 300px;
     width: 100%; }
-
-  .contacts-managers {
-    width: 600px; }
-  .contacts-manager {
-    width: 200px; }
 
   .profession-start {
     height: 350px; } }
@@ -869,12 +865,9 @@ input:focus, textarea:focus {
   .form-descr {
     width: 100%; }
 
-  .contacts-managers {
-    width: 100%; }
   .contacts-manager {
-    width: 33%; }
-    .contacts-manager__name {
-      font-size: 13px; }
+    display: block;
+    margin: 0 auto 20px; }
 
   .course-program__block {
     width: 190px; } }
@@ -897,11 +890,11 @@ input:focus, textarea:focus {
 
   .video .container {
     padding: 0; }
-  .video-block::after {
+  .video-block {
     border: 30px solid transparent;
     border-left: 50px solid #800000; }
-  .video-block:hover::after {
-    border-left: 50px solid #b70018; }
+    .video-block:hover {
+      border-left: 50px solid #b70018; }
 
   .header {
     padding: 5px; }
@@ -947,7 +940,7 @@ input:focus, textarea:focus {
     padding: 5px 3px;
     width: 30px; }
 
-  .video-block {
+  .video-wrapper {
     height: 200px; } }
 @media screen and (max-width: 400px) {
   .header-logo {
