@@ -1,0 +1,36 @@
+.faq
+    &-q
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 10px 25px
+        border: 2px solid $red
+        background: linear-gradient(#fff 50%, #f1e0dd 100%)
+        color: #000
+        cursor: pointer
+        span
+            font-size: 20px
+        i
+            font-size: 40px
+            color: $red
+        &:hover
+            color: #fff
+            background: linear-gradient($lightRed 50%, $red 100%)
+            i
+                color: #fff
+        &__active
+            color: #fff
+            background: linear-gradient($lightRed 50%, $red 100%)
+            i
+                color: #fff
+    &-answer
+        display: none
+        padding: 15px 20px
+        font-size: 19px
+        p
+            margin-bottom: 5px
+    &-block
+        margin-bottom: 10px
+        &:first-child
+            .faq-answer
+                display: block

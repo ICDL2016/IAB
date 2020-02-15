@@ -1,0 +1,47 @@
+.choose
+    position: relative
+    &-bg
+        position: absolute
+        top: -150px
+        left: 50%
+        transform: translateX(-50%)
+        width: 2000px
+        img
+            width: 100%
+    &-wrapper
+        top: -80px
+        position: relative
+    &-title
+        display: flex
+        flex-direction: column
+        margin: 0 auto 20px
+        font-weight: 700
+        text-align: center
+        font-size: 25px
+        color: #fff
+        width: max-content
+        span
+            display: block
+            margin: 0 auto 5px auto
+            padding: 0 3px
+            background: $red
+            width: max-content
+    &-blocks
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
+        margin: auto
+        width: 1260px
+    &-block
+        margin: 5px
+        padding: 10px 3px
+        width: 200px
+        font-size: 15px
+        font-weight: 500
+        color: #fff
+        text-align: center
+        background: $red
+        transition: background-color .3s
+        cursor: pointer
+        &:hover
+            background-color: $lightRed

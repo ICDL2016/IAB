@@ -1,0 +1,55 @@
+.start
+    &-left
+        width: 400px
+        text-align: center
+    &-icon
+        margin: auto
+        width: 85px
+        img
+            width: 100%
+    &-title
+        margin-bottom: 20px
+        font-size: 32px
+        font-weight: 700
+        text-align: center
+        span
+            display: block
+    &-figure
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        font-weight: 700
+        margin: auto
+        padding-top: 25px
+        background: url(../img/start/start-figure.svg) center no-repeat
+        -webkit-background-size: cover
+        background-size: cover
+        -ms-background-position-y: 0
+        background-position-y: 0
+        width: 350px
+        height: 175px
+    &-free
+        margin-bottom: 20px
+        position: relative
+        font-size: 32px
+        &::after
+            content: ''
+            position: absolute
+            width: 150px
+            height: 3px
+            background: $red
+            left: 50%
+            transform: translateX(-50%)
+            bottom: -10px
+    &-now
+        font-size: 25px
+    &-block
+        position: relative
+    &-img
+        position: absolute
+        right: 0
+        bottom: 0
+        width: 450px
+        img
+            width: 450px

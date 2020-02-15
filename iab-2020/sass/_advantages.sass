@@ -1,0 +1,49 @@
+.advantages
+    &-title
+        span
+            display: block
+    &-blocks
+        position: relative
+        left: -30px
+        width: 100%
+        height: 171px
+    &-block
+        display: flex
+        padding: 15px
+        position: absolute
+        top: 0
+        height: 171px
+        width: 296px
+        &:nth-child(odd)
+            align-items: flex-end
+            background: url(../img/advantages/triangle.png) center no-repeat
+            -webkit-background-size: contain
+            background-size: contain
+        &:nth-child(even)
+            align-items: flex-start
+            background: url(../img/advantages/triangle2.png) center no-repeat
+            -webkit-background-size: contain
+            background-size: contain
+        &:first-child
+            left: 0
+        &:nth-child(2)
+            left: 175px
+        &:nth-child(3)
+            left: 350px
+        &:nth-child(4)
+            left: 525px
+        &:last-child
+            left: 700px
+
+    &-info
+        margin: 0 auto
+        text-align: center
+        width: 170px
+        color: #fff
+        position: relative
+        left: 4px
+    &-text
+        font-size: 18px
+    &-number
+        font-size: 40px
+        font-weight: 700

@@ -1,0 +1,71 @@
+.header
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    background: rgba(#fff, .8)
+    padding: 20px 0
+    &-wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-right
+        display: flex
+        align-items: center
+    &-login
+        display: flex
+        align-items: center
+        margin-right: 20px
+        i
+            font-size: 40px
+            color: $lightRed
+        span
+            display: inline-block
+            margin-left: 5px
+            color: #060606
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                bottom: -3px
+                left: 50%
+                transform: translateX(-50%)
+                width: 0
+                height: 1px
+                background: #060606
+                transition: width .3s
+        &:hover
+            i
+                color: $red
+            span
+                &::after
+                    width: 100%
+
+
+    &-burger
+        cursor: pointer
+        position: relative
+        i
+            font-size: 40px
+            color: $red
+        &:hover 
+            i
+                color: $lightRed
+    &-menu
+        display: none
+        padding: 15px 0
+        background: $red
+        position: absolute
+        right: 0
+        top: 50px
+        font-size: 18px
+        width: 290px
+        &__list
+            li a
+                display: block
+                padding: 5px 15px
+                width: 100%
+                color: #fff
+                transition: background-color .3s
+                &:hover
+                    background-color: $lightRed
