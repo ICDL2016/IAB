@@ -44,6 +44,11 @@ ul, li
     margin: 0
     padding: 0
 
+button
+    outline: none
+    border: none
+    font-family: Ubuntu, sans-serif
+
 .title
     margin: 0 auto 20px
     width: max-content
@@ -80,8 +85,10 @@ section
     transition: background .3s, color .3s
     cursor: pointer
     &-star
+        width: 50px
         &__hover
             display: none
+            width: 50px
     &-text
         color: #fff
         span
@@ -98,3 +105,91 @@ section
             display: none
         .btn-star__hover
             display: inline
+
+.first-section
+    padding-top: 120px
+
+.form
+    &-input
+        &__span
+            display: none
+            margin-top: -5px
+            padding: 0 0 5px 0
+            font-size: 9px
+            font-weight: 300
+            font-family: Arial, sans-serif
+            text-align: left
+            width: 100%
+            color: #fff
+            line-height: 1
+
+button:focus
+    outline: none
+
+input
+    border: none
+    outline: none
+    &:hover, &:focus, &:active
+        outline: none!important
+
+input:active, input:focus, textarea:active, textarea:focus
+    outline: none!important
+
+input:focus, textarea:focus
+    outline-style: none
+    outline-width: 0 !important
+    outline-color: transparent !important
+
+input::-webkit-input-placeholder
+    color: $text
+    font-weight: 700
+
+input:-moz-placeholder
+    color: $text
+    font-weight: 700
+
+.form-input__span
+    margin: -5px auto 0
+    width: 350px
+    color: red
+
+.form-checkbox
+    position: absolute
+    z-index: -1
+    opacity: 0
+    margin: 10px 0 0 20px
+    width: auto!important
+
+.form-checkbox + label
+    margin: 0 auto 15px
+    padding: 3px 0 3px 20px
+    position: relative
+    cursor: pointer
+    font-size: 14px
+    font-weight: 700
+    a
+        text-decoration: underline
+        color: $red
+
+.form-checkbox__block
+    text-align: center
+
+.form-checkbox + label:before
+    content: ''
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    left: -6px
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+    border: 1px solid $lightRed
+    width: 20px
+    height: 20px
+    background-color: #ffffff
+    text-align: center
+    color: $red
+
+.form-checkbox:checked + label:before
+    content: '\2714'
