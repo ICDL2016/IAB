@@ -7,14 +7,14 @@
             <?php for($i=0; $i<10; $i++) : ?>
             <div class="clients-slide">
                 <div class="clients-img">
-                    <img src="img/clients/clients.jpg" alt="clients">
+                    <img src="img/clients/clients3.jpg" alt="clients">
                 </div>
             </div>
             <?php endfor;?>
         </div>
 
         <div class="clients-descr">
-            Более 9000 актуальных вакансий с заплатой от 50 000 руб. до 2 000 000 руб
+            Более 9000 актуальных вакансий с заплатой от 50000 руб. до 2000000 руб
             <span>для руководителей высшего звена</span>
         </div>
     </div>
