@@ -17,6 +17,20 @@
 <header class="header">
     <div class="container">
         <div class="header-wrapper">
+            <div class="header-burger header-burger__mob">
+                <i class="fa fa-bars"></i>
+                <div class="header-menu">
+                    <div class="header-triangle">&#9650;</div>
+                    <ul class="header-menu__list">
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">Раздел номер 2</a></li>
+                        <li><a href="">Раздел номер 3</a></li>
+                        <li><a href="">Раздел номер 4</a></li>
+                        <li><a href="">Раздел 5</a></li>
+                        <li><a href="">Раздел 6</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="header-logo">
                 <a href="index.php">
                     <img src="img/header/logo.png" alt="logo">
@@ -27,9 +41,10 @@
                     <i class="fa fa-graduation-cap"></i>
                     <span>Вход</span>
                 </a>
-                <div class="header-burger">
+                <div class="header-burger header-burger__desk">
                     <i class="fa fa-bars"></i>
                     <div class="header-menu">
+                        <div class="header-triangle">&#9650;</div>
                         <ul class="header-menu__list">
                             <li><a href="">Главная</a></li>
                             <li><a href="">Раздел номер 2</a></li>
