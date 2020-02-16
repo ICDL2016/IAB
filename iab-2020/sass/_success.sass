@@ -12,3 +12,11 @@
         left: 50%
         transform: translateX(-50%)
         z-index: 10
+
+@media screen and (max-width: 575px)
+    .success
+        &-title
+            &::before
+                left: 10px
+            &::after
+                right: 10px

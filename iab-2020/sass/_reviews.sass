@@ -22,7 +22,7 @@
     &-slide
         padding: 10px
         text-align: center
-        font-size: 20px
+        font-size: 18px
     &-name
         font-weight: 700
     &-prof
@@ -50,3 +50,20 @@
             left: 0
         &__right
             right: 0
+
+@media screen and (max-width: 767px)
+    .reviews
+        &-descr
+            font-size: 13px
+        &-title
+            &::before
+                left: 0
+            &::after
+                right: 0
+
+@media screen and (max-width: 380px)
+    .reviews
+        &-title
+            width: 200px
+            &::before, &::after
+                top: 13px

@@ -46,12 +46,14 @@
     &-burger
         cursor: pointer
         position: relative
+        &__mob
+            display: none
         i
             font-size: 40px
-            color: $red
+            color: $lightRed
         &:hover 
             i
-                color: $lightRed
+                color: $red
     &-menu
         display: none
         padding: 15px 0
@@ -61,6 +63,7 @@
         top: 50px
         font-size: 18px
         width: 290px
+        z-index: 20
         &__list
             li a
                 display: block
@@ -70,3 +73,60 @@
                 transition: background-color .3s
                 &:hover
                     background-color: $lightRed
+
+    &-triangle
+        position: absolute
+        right: 7px
+        top: -12px
+        color: $red
+
+@media screen and (max-width: 991px)
+    .header
+        padding: 10px 0
+        &-logo
+            width: 400px
+            a, img
+                width: 100%
+            a
+                display: flex
+                align-items: center
+                justify-content: center
+
+@media screen and (max-width: 767px)
+    .header
+        &-logo
+            width: 250px
+        &-login
+            margin-right: 0
+            i
+                font-size: 25px
+            span
+                font-size: 16px
+        &-burger
+            &__mob
+                display: block
+            &__desk
+                display: none
+            i
+                font-size: 25px
+        &-menu
+            left: 0
+            right: auto
+            top: 36px
+        &-triangle
+            right: auto
+            left: 3px
+
+@media screen and (max-width: 575px)
+    .header
+        &-logo
+            width: 200px
+        &-login
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            span
+                margin-left: 0
+                font-size: 13px
+        &-menu
+            top: 43px

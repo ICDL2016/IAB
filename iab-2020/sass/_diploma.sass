@@ -4,13 +4,14 @@
     background-size: cover
     position: relative
     z-index: 1
-    top: -30px
     &-title
         margin-bottom: 5px
-        font-size: 30px
         color: #fff
         &::before, &::after
             background: $yellow
+        span
+            display: inline
+
     &-subtitle
         margin: 0 auto 30px
         font-weight: 400
@@ -21,24 +22,117 @@
         display: flex
         justify-content: space-around
         margin-bottom: 15px
+        &__mob
+            display: none
         a
             position: relative
             svg
                 position: absolute
                 top: -15px
                 right: -15px
-    &-bottom
+            img
+                width: 100%
+    &-license
         display: flex
         align-items: center
         justify-content: space-around
     &-descr
+        text-align: center
         color: #fff
         font-size: 20px
         span
             display: block
 
+@media screen and (max-width: 991px)
+    .diploma
+        &-img
+            a
+                text-align: right
+                img
+                    width: 90%
+        &-subtitle
+            margin: 0 auto 40px
+            font-size: 17px
+        &-descr
+            font-size: 17px
 
+@media screen and (max-width: 767px)
+    .diploma
+        &-title
+            span
+                display: block
+        &-img
+            a
+                text-align: center
+                svg
+                    right: -5px
+                img
+                    width: 90%
+            &__desk
+                display: none
+            &__mob
+                display: block
+                position: relative
+                svg
+                    position: absolute
+                    top: -15px
+                    right: -15px
+                img
+                    width: 100%
+        &-subtitle
+            margin: 0 auto 40px
+            font-size: 17px
+        &-descr
+            font-size: 17px
+        &-bottom
+            display: flex
+            justify-content: center
+            align-items: center
+        &-license
+            width: 50%
+            flex-direction: column
+            justify-content: center
+        &-icon
+            &:first-child
+                order: 0
+            &:last-child
+                order: 1
+        &-descr
+            margin: auto
+            width: 80%
+            flex-shrink: 0
+            order: 2
+            font-size: 14px
+            span
+                display: inline
 
+@media screen and (max-width: 575px)
+    .diploma
+        &-title
+            line-height: 1.6
+            width: 290px
+            &::before, &::after
+                top: 17px
+                transform: none
+            &::before
+                left: 10px
+            &::after
+                right: 10px
+        &-img
+            flex-wrap: wrap
+            a
+                margin-bottom: 20px
+            &__mob
+                width: 160px
+        &-license
+            width: 40%
 
-
-
+@media screen and (max-width: 424px)
+    .diploma
+        &-img
+            &__mob
+                width: 120px
+        &-bottom
+            justify-content: space-around
+        &-descr
+            font-size: 12px

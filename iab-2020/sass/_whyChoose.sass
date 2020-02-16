@@ -17,3 +17,23 @@
             max-width: 650px
             font-size: 18px
             margin-left: 20px
+
+@media screen and (max-width: 767px)
+    .whyChoose
+        &-title
+            span
+                display: inline
+            &::before
+                display: none
+            &::after
+                left: 50%
+                transform: translateX(-50%)
+                bottom: -10px
+                top: auto
+                right: auto
+                width: 60px
+        &-item
+            span
+                font-size: 16px
+            img
+                width: 45px

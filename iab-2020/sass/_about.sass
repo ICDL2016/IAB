@@ -17,9 +17,50 @@
     &-img
         display: flex
         justify-content: space-between
+        margin-bottom: 20px
         a
             padding: 0 10px
             img
                 width: 100%
     &-btn
         margin: auto
+
+@media screen and (max-width: 991px)
+    .about
+        &-title
+            span
+                display: inline
+        &-descr
+            font-size: 17px
+
+@media screen and (max-width: 575px)
+    .about
+        &-title
+            &::before
+                display: none
+            &::after
+                left: 50%
+                transform: translateX(-50%)
+                bottom: -10px
+                top: auto
+                right: auto
+                width: 60px
+            span
+                display: inline
+        &-descr
+            font-size: 15px
+
+@media screen and (max-width: 424px)
+    .about
+        &-img
+            flex-direction: column
+            justify-content: center
+            a
+                margin: 0 auto 10px
+                width: 250px
+        &-descr
+            margin-left: 10px
+
+
+
+

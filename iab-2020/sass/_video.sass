@@ -2,6 +2,8 @@
     background: url(../img/video/video-bg.jpg) center no-repeat
     -webkit-background-size: cover
     background-size: cover
+    -ms-background-position-y: 0
+    background-position-y: 0
     &-wrapper
         display: flex
         align-items: center
@@ -11,8 +13,13 @@
         cursor: pointer
         svg
             width: 100px
+            g g polygon.fil0
+                opacity: .8!important
             &:hover
                 fill: red
+                g g polygon.fil0
+                    fill: #fff!important
+                    opacity: .8!important
                 g g polygon.fil1
                     fill: $lightYellow!important
                 g g polygon.fil2
@@ -21,3 +28,23 @@
 #divPlayer1
     display: none
     padding-top: 90px
+
+@media screen and (max-width: 991px)
+    .video
+        &-wrapper
+            height: 400px
+        &-play
+            position: relative
+            bottom: 25px
+            svg
+                width: 60px
+
+    #divPlayer1
+        padding-top: 35px
+
+@media screen and (max-width: 575px)
+    .video
+        -ms-background-position-x: 66%
+        background-position-x: 66%
+        &-wrapper
+            height: 350px

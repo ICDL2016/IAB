@@ -10,6 +10,9 @@
     </section>
 
 <?php require_once '_choose.php'; ?>
+
+<div class="margin-helper"></div>
+
 <?php require_once '_diploma.php'; ?>
 <?php require_once '_advantages.php'; ?>
 <?php require_once '_steps.php'; ?>
@@ -49,7 +52,7 @@
                 });
             } else if ($(window).width() < 992) {
                 player1 = new YT.Player('divPlayer1', {
-                    height: '450',
+                    height: '400',
                     width: '100%',
                     videoId: 'd8Oc90QevaI',
                 });
@@ -68,6 +71,7 @@
             $('.video').css('background', 'none');
             $('.choose-bg').css('z-index', '-1');
             $('.choose-wrapper').css('top', '-20px');
+            $('.margin-helper').css('margin-top', '0');
             $('#divPlayer1').show();
             $('iframe').css('display', 'block');
             player1.playVideo();

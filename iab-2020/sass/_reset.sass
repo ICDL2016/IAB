@@ -4,12 +4,12 @@
     padding-left: 15px
     margin-right: auto
     margin-left: auto
-@media screen and (min-width: 768px)
-    .container
-        max-width: 720px
 @media screen and (min-width: 576px)
     .container
         max-width: 540px
+@media screen and (min-width: 768px)
+    .container
+        max-width: 720px
 @media screen and (min-width: 992px)
     .container
         max-width: 960px
@@ -193,3 +193,39 @@ input:-moz-placeholder
 
 .form-checkbox:checked + label:before
     content: '\2714'
+
+@media screen and (max-width: 991px)
+    .title
+        max-width: 500px
+        font-size: 25px
+
+@media screen and (max-width: 767px)
+    .title
+        font-size: 22px
+        &::before, &::after
+            width: 40px
+        &::before
+            left: -60px
+        &::after
+            right: -60px
+
+@media screen and (max-width: 575px)
+    .title
+        width: 400px
+        max-width: none
+
+@media screen and (max-width: 424px)
+    .title
+        width: 100%
+    .btn
+        width: 290px
+        &-text
+            span
+                font-size: 14px
+                &:first-child
+                    margin-bottom: 5px
+                    font-size: 18px
+        &-star
+            width: 40px
+            &__hover
+                width: 40px

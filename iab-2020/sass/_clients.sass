@@ -3,7 +3,7 @@
         position: absolute
         font-size: 70px
         color: $red
-        top: 8px
+        top: 0
         transition: color .3s
         &:hover
             color: $lightRed
@@ -17,3 +17,50 @@
         font-size: 18px
         span
             display: block
+
+@media screen and (max-width: 991px)
+    .clients
+        &-slide
+            margin: auto
+            width: 125px
+
+@media screen and (max-width: 767px)
+    .clients
+        &-title
+            span
+                display: inline
+
+@media screen and (max-width: 575px)
+    .clients
+        &-title
+            &::before
+                display: none
+            &::after
+                left: 50%
+                transform: translateX(-50%)
+                bottom: -10px
+                top: auto
+                right: auto
+                width: 60px
+        &-slider
+            margin: auto
+            width: 400px
+        &-arrow
+            &__left
+                left: -10px
+            &__right
+                right: -10px
+        &-descr
+            font-size: 16px
+            span
+                display: inline
+
+@media screen and (max-width: 449px)
+    .clients
+        &-slider
+            width: 260px
+        &-arrow
+            &__left
+                left: -30px
+            &__right
+                right: -30px

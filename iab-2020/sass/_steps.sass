@@ -29,3 +29,39 @@
         span
             color: $red
             font-weight: 700
+
+@media screen and (max-width: 991px)
+    .steps
+        &-step
+            width: 30%
+            font-size: 16px
+
+@media screen and (max-width: 767px)
+    .steps
+        &-step
+            font-size: 14px
+
+@media screen and (max-width: 575px)
+    .steps
+        &-title
+            &::before, &::after
+                width: 25px
+            &::before
+                left: 0
+            &::after
+                right: 0
+        &-steps
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &-step
+            width: 80%
+            font-size: 16px
+            margin-bottom: 20px
+
+
+@media screen and (max-width: 380px)
+    .steps
+        &-title
+            &::before, &::after
+                top: 13px

@@ -1,5 +1,8 @@
 .choose
     position: relative
+    background: url(../img/choose/choose-bg.png) center no-repeat
+    -webkit-background-size: cover
+    background-size: cover
     &-bg
         position: absolute
         top: -150px
@@ -45,3 +48,49 @@
         cursor: pointer
         &:hover
             background-color: $lightRed
+
+.margin-helper
+    margin-top: -70px
+
+@media screen and (max-width: 1259px)
+    .choose
+        &-blocks
+            width: 1050px
+
+@media screen and (max-width: 1049px)
+    .choose
+        &-blocks
+            width: 840px
+
+@media screen and (max-width: 839px)
+    .choose
+        &-blocks
+            width: 630px
+
+@media screen and (max-width: 629px)
+    .choose
+        &-blocks
+            width: 420px
+
+@media screen and (max-width: 419px)
+    .choose
+        &-blocks
+            width: 100%
+            justify-content: center
+        &-block
+            width: 150px
+
+@media screen and (max-width: 991px)
+    .choose
+        &-wrapper
+            top: -120px
+
+    .margin-helper
+        margin-top: -90px
+
+@media screen and (max-width: 767px)
+    .choose
+        &-title
+            font-size: 20px
+        &-block
+            font-size: 11px
