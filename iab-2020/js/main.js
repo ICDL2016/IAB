@@ -43,4 +43,96 @@ $(document).ready(function () {
        $(this).next('.faq-answer').slideToggle();
        $(this).children('i').toggleClass('fa-angle-down').toggleClass('fa-angle-right');
     });
+
+    // блоки
+    let directionsBlock = document.querySelectorAll('.directions-block');
+    for (let i=0; i<directionsBlock.length; i++) {
+        directionsBlock[i].addEventListener('click', function () {
+
+            $('.programs-wrap[data-program!='+ $(this).attr('data-program') +']').hide();
+            $('.directions-block[data-program!='+ $(this).attr('data-program') +']').removeClass('red').addClass('margin-helper');
+
+            let directionsTop = document.querySelector('.directions-blocks').getBoundingClientRect().top;
+            let blockTop =  this.getBoundingClientRect().top;
+            let marginFromTop = blockTop - directionsTop;
+            this.classList.toggle('red');
+            this.classList.toggle('margin-helper');
+
+            $('.programs-wrap[data-program='+ $(this).attr('data-program') +']').css('top', +marginFromTop + 45 + 'px').toggle();
+            let blockHeight = $('.programs-wrap[data-program='+ $(this).attr('data-program') +']').height();
+            this.style.marginBottom = blockHeight+'px';
+
+        });
+    }
+
+    // ресайзы экрана
+    window.onresize = function() {
+        let programsWrap = document.querySelectorAll('.programs-wrap');
+        let directionsBlock = document.querySelectorAll('.directions-block');
+        for (let i=0; i<programsWrap.length; i++) {
+            if (+programsWrap[i].style.top.replace('px', '') > 0) {
+                let directionsTop = document.querySelector('.directions-blocks').getBoundingClientRect().top;
+                let blockTop =  directionsBlock[i].getBoundingClientRect().top;
+                let marginFromTop = blockTop - directionsTop;
+                programsWrap[i].style.top = +marginFromTop + 45 + 'px';
+                directionsBlock[i].style.marginBottom = getComputedStyle(programsWrap[i]).height;
+                break;
+            }
+        }
+    };
+
+
+    //popup form
+    $('.popup-btn').click(function () {
+       $('.overlay, .popup').fadeIn();
+       $('body').css('overflow', 'hidden');
+    });
+    $('.popup-close, .overlay').click(function () {
+        $('.overlay, .popup').fadeOut();
+        $('body').css('overflow-y', 'visible');
+    });
+
+    // псевдовалидация попап
+    let emptyTop2 = false;
+    let emptyBottom2 = false;
+    $('.popup-form__email').on('click', function () {
+        emptyTop2 = true;
+        if (emptyBottom2 === true && ($(this).parent().children('.popup-form__email').val().length === 0 || $(this).parent().children('.popup-form__email').val().indexOf('@') === -1)) {
+            $(this).parent().children('.form-input__span-email').show();
+        }
+    }).on('input', function () {
+        $(this).parent().children('.form-input__span-email').hide();
+        $(this).parent().children('.popup-form__email').removeClass('border-red');
+    });
+
+    $('.popup-form__name').on('click', function () {
+        emptyBottom2 = true;
+        if (emptyTop2 === true && $(this).parent().children('.popup-form__name').val().length === 0) {
+            $(this).parent().children('.form-input__span-name').show();
+        }
+    }).on('input', function () {
+        $(this).parent().children('.form-input__span-name').hide();
+        $(this).parent().children('.popup-form__name').removeClass('border-red');
+    });
+
+    $('.popup-form__btn').on('click', function () {
+        event.preventDefault();
+        let send = true;
+
+        if ($(this).parent().children('.popup-form__name').val().length === 0) {
+            $(this).parent().children('.form-input__span-name').show();
+            $(this).parent().children('.popup-form__name').addClass('border-red');
+            send = false;
+        }
+
+        if ($(this).parent().children('.popup-form__email').val().length === 0 || $(this).parent().children('.popup-form__email').val().indexOf('@') === -1) {
+            $(this).parent().children('.form-input__span-email').show();
+            $(this).parent().children('.popup-form__email').addClass('border-red');
+            send = false;
+        }
+
+        if (send === true) {
+            $(this).parent().submit();
+        }
+    });
 });
