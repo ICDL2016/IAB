@@ -78,6 +78,96 @@
                 color: $red
                 text-decoration: underline
 
+.proftest
+    &-img
+        text-align: center
+        margin: 0 auto 25px
+        position: relative
+        &::after, &::before
+            content: ''
+            position: absolute
+            height: 5px
+            width: 400px
+            background: $red
+            top: 50%
+            transform: translateY(-50%)
+        &::after
+            right: 0
+        &::before
+            left: 0
+    &-title
+        margin-bottom: 15px
+        font-size: 22px
+        text-align: center
+    &-subtitle
+        margin-bottom: 20px
+        font-size: 17px
+        text-align: center
+    &-buttons
+        display: flex
+        align-items: center
+        justify-content: space-around
+        margin-bottom: 45px
+    &-button
+        padding: 50px
+        font-size: 21px
+        color: #fff
+        text-align: center
+        width: 350px
+        font-weight: 700
+        background: $lightRed
+        cursor: pointer
+        transition: background-color .3s, box-shadow .3s
+        box-shadow: 10px 10px 0 0 $red
+        &:hover
+            box-shadow: 10px 10px 0 0 $lightRed
+            background: $red
+        &__second
+            color: $red
+            box-shadow: 10px 10px 0 0 $yellow
+            background: $lightYellow
+            &:hover
+                box-shadow: 10px 10px 0 0 $lightYellow
+                background: $yellow
+    &-answers
+        &__text
+            margin-bottom: 15px
+    &-steps
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+    &-step
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 4px
+        border: 1px solid $red
+        padding: 5px
+        width: 35px
+        height: 35px
+        font-weight: 700
+        text-align: center
+        &:nth-child(3)
+            color: #fff
+            background: $lightRed
+
+@media screen and (max-width: 991px)
+    .proftest
+        &-img
+            &::after, &::before
+                width: 250px
+        &-button
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 100px
+            font-size: 18px
+            width: 300px
+            padding: 25px
+        &-steps
+            justify-content: flex-start
+
 @media screen and (max-width: 767px)
     .page404
         &-block
@@ -88,6 +178,18 @@
             width: 100%
             max-width: 500px
 
+    .proftest
+        &-title
+            font-size: 18px
+        &-subtitle
+            font-size: 15px
+        &-img
+            &::after, &::before
+                width: 150px
+        &-button
+            font-size: 17px
+            width: 220px
+            padding: 15px
 
 @media screen and (max-width: 575px)
     .login
@@ -121,6 +223,18 @@
     .page404-btn span:first-child, .page404-btn span
         font-size: 14px
 
+@media screen and (max-width: 499px)
+    .proftest
+        &-img
+            &::after, &::before
+                width: 25%
+        &-button
+            margin-bottom: 25px
+        &-buttons
+            margin-bottom: 20px
+            flex-direction: column
+            justify-content: center
+            align-items: center
 
 @media screen and (max-width: 374px)
     .login
