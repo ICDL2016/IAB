@@ -64,29 +64,45 @@
 @media screen and (max-width: 767px)
     .advantages
         padding-bottom: 410px
-        &-blocks
-            left: -10px
         &-block
-            &:nth-child(4)
+            &:last-child
                 top: 185px
                 left: 175px
-            &:last-child
+            &:nth-child(4)
                 top: 185px
                 left: 0
             &:nth-child(3)
+                padding: 5px 15px 15px
+                align-items: flex-start
+                background: url(../img/advantages/triangle-reverse.png) center no-repeat
+                -webkit-background-size: contain
+                background-size: contain
                 top: 375px
-                left: 90px
+                left: 175px
+                .advantages-info
+                    margin-left: 72px
+                .advantages-text
+                    width: 100px
+                .advantages-number
+                    text-align: left
+                    margin-left: 10px
 
-@media screen and (max-width: 499px)
+@media screen and (max-width: 519px)
     .advantages
         padding-bottom: 230px
+        &-title
+            &::before
+                left: 0
+            &::after
+                right: 0
         &-blocks
+            left: -8px
             margin: auto
             width: 320px
         &-block
             height: 115px
-            width: 200px
-            &:nth-child(even)
+            width: 195px
+            &:nth-child(2), &:nth-child(3), &:last-child
                 left: 115px
             &:nth-child(4)
                 top: 125px
@@ -95,10 +111,15 @@
             &:nth-child(3)
                 top: 250px
                 left: 115px
+                .advantages-info
+                    margin-left: -12px
+                .advantages-number
+                    text-align: center
+                    margin-left: 0
 
         &-text
             margin: auto
             width: 125px
-            font-size: 13px
+            font-size: 12px
         &-number
             font-size: 22px

@@ -1,0 +1,72 @@
+.overlay
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(#000, .5)
+    z-index: 999
+
+.popup
+    display: none
+    padding: 70px 15px 15px
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 400px
+    border: 8px solid #ccc
+    background: #333333
+    z-index: 1000
+    &-img
+        position: absolute
+        top: -50px
+        left: 50%
+        transform: translateX(-50%)
+        width: 80px
+        img
+            width: 100%
+    &-close
+        position: absolute
+        color: $red
+        font-size: 35px
+        right: 10px
+        top: 10px
+        line-height: 1
+        cursor: pointer
+        transition: color .3s 
+        &:hover
+            color: $lightRed
+    &-title
+        margin-bottom: 20px
+        text-align: center
+        color: #fff
+        font-size: 25px
+        span
+            display: block
+    &-form
+        input
+            margin-bottom: 10px
+            padding: 10px
+            width: 100%
+        label, a
+            color: #fff!important
+            font-weight: 400!important
+        label
+            margin-left: 20px!important
+        &__phone
+            margin-bottom: 20px!important
+        &__btn
+            margin: 25px auto 0
+            width: 290px
+            .btn-text
+                span
+                    font-size: 14px
+                    &:first-child
+                        margin-bottom: 5px
+                        font-size: 18px
+            .btn-star
+                width: 40px
+                &__hover
+                    width: 40px

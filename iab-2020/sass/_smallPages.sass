@@ -78,13 +78,57 @@
                 color: $red
                 text-decoration: underline
 
+@media screen and (max-width: 767px)
+    .page404
+        &-block
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &-img
+            width: 100%
+            max-width: 500px
 
 
+@media screen and (max-width: 575px)
+    .login
+        &-subtitle
+            font-size: 15px
+        &-title
+            font-size: 20px
+        &-form
+            &__wrapper
+                padding: 60px 10px 20px
+                width: 100%
+        &-btn
+            max-width: 350px
+            width: 100%
+        &-form
+            input, .form-input__span
+                width: 100%
+                max-width: 350px
+            .form-checkbox+label
+                font-size: 11px
+            .login-btn span:first-child, .login-btn span
+                font-size: 18px
+
+    .page404
+        &-info
+            width: 100%
+        &-title
+            font-size: 40px
+        &-btn
+            margin: auto
+    .page404-btn span:first-child, .page404-btn span
+        font-size: 14px
 
 
-
-
-
+@media screen and (max-width: 374px)
+    .login
+        &-form
+            .form-checkbox+label
+                font-size: 9px
+            .login-btn span:first-child, .login-btn span
+                font-size: 16px
 
 
 

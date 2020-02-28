@@ -1,0 +1,60 @@
+.aboutUs 
+    &-video
+        background: url(../img/about-page/about-us.png) center no-repeat
+        -webkit-background-size: cover
+        background-size: cover
+    &-choose
+        background: transparent
+        &__bg
+            height: 450px
+            img
+                height: 100%
+    &-success
+        background: url(../img/about-page/aboutUs-success.jpg) center no-repeat
+        color: #fff!important
+        .reviews-img::before
+            border-color: white
+        .reviews-prof::after
+            background: $yellow
+        .reviews-arrow, .reviews-arrow:hover
+            color: #fff
+    &-diploma
+        background: url(../img/about-page/aboutUs-diploma.jpg) center no-repeat
+        .title, .diploma-subtitle, .diploma-descr
+            color: $text!important
+        .fil0
+            fill: $red
+
+@media screen and (max-width: 991px)
+    .aboutUs
+        &-choose
+            &__bg
+                height: 540px
+        &-margin
+            margin-top: 80px
+
+@media screen and (max-width: 767px)
+    .aboutUs
+        &-choose
+            &__bg
+                height: 710px
+        &-margin
+            margin-top: 260px
+
+@media screen and (max-width: 575px)
+    .aboutUs
+        &-choose
+            &__bg
+                height: 540px
+        &-margin
+            margin-top: 90px
+
+
+
+
+
+
+
+
+
+
