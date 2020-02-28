@@ -45,7 +45,7 @@
                 высокооплачиваемым специалистом в интересной Вам сфере деятельности.</div>
         </div>
 
-        <div class="btn about-btn">
+        <div class="btn about-btn popup-btn">
             <?php require '_btn-star.php';?>
         </div>
     </div>

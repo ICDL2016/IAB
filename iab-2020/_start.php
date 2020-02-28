@@ -16,7 +16,7 @@
                         <div class="start-now">прямо сейчас</div>
                     </div>
 
-                    <div class="btn start-btn">
+                    <div class="btn start-btn popup-btn">
                         <?php require '_btn-star.php';?>
                     </div>
                 </div>

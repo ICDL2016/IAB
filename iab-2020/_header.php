@@ -33,7 +33,7 @@
             </div>
             <div class="header-logo">
                 <a href="index.php">
-                    <img src="img/header/logo.png" alt="logo">
+                    <img src="img/header/logo.svg" alt="logo">
                 </a>
             </div>
             <div class="header-right">

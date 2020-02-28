@@ -2,7 +2,7 @@
     <div class="container footer-wrapper">
         <div class="footer-left">
             <div class="footer-logo">
-                <img src="img/footer/footer-logo.png" alt="logo">
+                <img src="img/footer/footer-logo.svg" alt="logo">
             </div>
             <div class="footer-social">
                 <a href=""><i class="fa fa-facebook"></i></a>
@@ -53,3 +53,42 @@
         </div>
     </div>
 </footer>
+
+<div class="overlay"></div>
+<div class="popup">
+    <div class="popup-img">
+        <img src="img/footer/popup.png" alt="popup">
+    </div>
+    <div class="popup-close">
+        <i class="fa fa-close"></i>
+    </div>
+
+    <h2 class="popup-title">Зарегистрируйтесь,
+        <span>чтобы начать обучение</span></h2>
+
+    <form class="popup-form">
+        <input class="popup-form__name" type="text" name="name" placeholder="Имя*">
+        <div class="form-input__span form-input__span-name">Поле "Имя" обязательно для заполнения</div>
+        <input class="popup-form__email" type="email" name="email" placeholder="Email*">
+        <div class="form-input__span form-input__span-email">Поле "Email" обязательно для заполнения и
+            должно содержать правильный электронный адрес (например, example@mail.ru)
+        </div>
+        <input class="popup-form__phone" type="text" name="phone" placeholder="Телефон">
+
+        <input class="form-checkbox" type="checkbox" name="checkbox" id="ch2" checked required>
+        <label class="form-label" for="ch2">Я принимаю <a href="#">Условия Конфиденциальности</a></label>
+
+        <div class="btn popup-form__btn">
+            <?php require '_btn-star.php';?>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+

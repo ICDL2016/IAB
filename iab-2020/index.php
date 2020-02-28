@@ -13,16 +13,25 @@
 
 <div class="margin-helper"></div>
 
+    <section class="diploma">
 <?php require_once '_diploma.php'; ?>
+    </section>
+
 <?php require_once '_advantages.php'; ?>
 <?php require_once '_steps.php'; ?>
 <?php require_once '_reviews.php'; ?>
 <?php require_once '_about.php'; ?>
 <?php require_once '_clients.php'; ?>
-<?php require_once '_why-choose.php'; ?>
+
+    <section class="whyChoose">
+        <?php require_once '_why-choose.php'; ?>
+    </section>
+
+    <section class="success">
 <?php require_once '_success.php'; ?>
+    </section>
+
 <?php require_once '_faq.php'; ?>
-<?php require_once '_start.php'; ?>
 
 <?php require_once '_footer.php'; ?>
 <?php require_once '_scripts.php'; ?>
