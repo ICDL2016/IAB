@@ -8,7 +8,7 @@
     background: rgba(#000, .5)
     z-index: 999
 
-.popup
+.popup, .cert-popup
     display: none
     padding: 70px 15px 15px
     position: fixed
@@ -70,3 +70,23 @@
                 width: 40px
                 &__hover
                     width: 40px
+
+.cert-popup
+    .popup-form__btn
+        .btn-text
+            span
+                font-size: 14px
+                font-weight: 700
+                &:first-child
+                    margin-bottom: 5px
+                    font-size: 10px
+
+@media screen and (max-width: 424px)
+    .popup, .cert-popup
+        width: 100%
+        padding: 70px 5px 15px
+        .form-input__span
+            width: 100%
+    .popup-form label, .cert-popup-form label
+        margin-left: 10px!important
+        font-size: 12px!important

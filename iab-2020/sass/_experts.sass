@@ -1,0 +1,85 @@
+.experts
+    &-slide
+        margin: auto
+        padding: 12px
+        border: 1px solid $red
+        width: 180px
+        transition: background-color .3s, color .3s
+        cursor: pointer
+        &:hover
+            background: $red
+            color: #fff
+            .experts-img::before
+                border-color: #fff
+            .experts-name::after
+                background: $yellow
+    &-img
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 25px
+        -webkit-border-radius: 50%
+        -moz-border-radius: 50%
+        border-radius: 50%
+        position: relative
+        img
+            width: 114px!important
+            height: 114px
+        &::before
+            content: ''
+            position: absolute
+            width: 120px
+            height: 120px
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            border: 2px solid $red
+            -webkit-border-radius: 50%
+            -moz-border-radius: 50%
+            border-radius: 50%
+            transition: border .3s
+    &-name
+        margin-bottom: 20px
+        position: relative
+        font-weight: 500
+        &::after
+            content: ''
+            position: absolute
+            bottom: -10px
+            left: 0
+            width: 70%
+            height: 2px
+            background: $red
+            transition: background-color .3s
+    &-prof
+        font-size: 14px
+    &-arrow
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        font-size: 70px
+        color: $red
+        transition: color .3s
+        &:hover
+            color: $lightRed
+        &__left
+            left: -30px
+        &__right
+            right: -30px
+
+@media screen and (max-width: 991px)
+    .experts
+        &-slide
+            padding: 12px 5px
+            width: 165px
+
+@media screen and (max-width: 575px)
+    .experts
+        &-slider
+            margin: auto
+            width: 350px
+
+@media screen and (max-width: 424px)
+    .experts
+        &-slider
+            width: 180px

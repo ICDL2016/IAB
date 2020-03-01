@@ -1,0 +1,104 @@
+.proforient
+    &-video
+        background: url(../img/proforient/proforient.jpg) center no-repeat
+        &__wrapper
+            height: 800px
+            .video-play
+                margin-bottom: 200px
+    &-text
+        margin: 0 auto 30px
+        width: 290px
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 22px
+    &-choose
+        background: none
+        height: 0
+        &__bg
+            top: -350px
+        &__wrapper
+            top: -315px
+            .container
+                position: relative
+    &-img
+        margin-right: 15px
+        flex-shrink: 0
+        width: 100px
+        img
+            width: 100%
+    &-btn
+        position: relative
+        margin: auto
+        .btn-text span:first-child
+            margin-bottom: 0
+        .cert-border
+            width: 130px
+            &__right
+                right: -140px
+            &__left
+                left: -140px
+    &-about
+        position: relative
+        background: url(../img/proforient/proforient-about.jpg) center no-repeat
+        -webkit-background-size: cover
+        background-size: cover
+        color: #fff
+        .about-title
+            &::before, &::after
+                background: $yellow
+    &-whyChoose
+        background: url(../img/why-choose/whyChoose-light.jpg) center no-repeat
+        -webkit-background-size: cover
+        background-size: cover
+        .whyChoose-title,.whyChoose-item span
+            color: $text
+    &-start
+        padding: 60px 0
+        .start-img
+            width: 400px
+            right: 50px
+            bottom: -30px
+
+@media screen and (max-width: 991px)
+    .proforient
+        &-video
+            &__wrapper
+                height: 600px
+    .proforient-start .start-img
+        width: 300px
+        right: -30px
+
+@media screen and (max-width: 767px)
+    .proforient-btn .cert-border
+        display: none
+    .proforient
+        &-start
+            padding: 30px 0
+
+@media screen and (max-width: 575px)
+    .proforient-choose__wrapper .title
+        width: max-content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

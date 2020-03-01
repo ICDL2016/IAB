@@ -38,6 +38,34 @@ $(document).ready(function () {
         }
     });
 
+    $('.experts-slider').owlCarousel({
+        items: 5,
+        nav: true,
+        autoplay: true,
+        loop: true,
+        dots: false,
+        navText: ["<i class='fa fa-angle-left experts-arrow experts-arrow__left'>",
+            "<i class='fa fa-angle-right experts-arrow experts-arrow__right'>"],
+        responsive: {
+            1: {
+                items: 1,
+            },
+            425: {
+                items: 2,
+            },
+            576: {
+                items: 3,
+            },
+            768: {
+                items: 4,
+            },
+            992: {
+                items: 5,
+            }
+        }
+    });
+
+    //faq
     $('.faq-q').click(function () {
        $(this).toggleClass('faq-q__active');
        $(this).next('.faq-answer').slideToggle();
