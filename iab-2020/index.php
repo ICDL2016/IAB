@@ -20,7 +20,9 @@
 <?php require_once '_advantages.php'; ?>
 <?php require_once '_steps.php'; ?>
 <?php require_once '_reviews.php'; ?>
-<?php require_once '_about.php'; ?>
+    <section class="about">
+        <?php require_once '_about.php'; ?>
+    </section>
 <?php require_once '_clients.php'; ?>
 
     <section class="whyChoose">
