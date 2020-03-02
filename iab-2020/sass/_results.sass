@@ -1,0 +1,119 @@
+.results
+    &-title
+        margin-bottom: 20px
+        text-align: center
+    &-table
+        margin-bottom: 30px
+        width: 100%
+        font-size: 18px
+        font-weight: 500
+        thead
+            background: $red
+            color: #fff
+            width: 100%
+            tr
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding: 10px 20px
+                width: 100%
+        tbody
+            tr
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding: 5px 20px
+                width: 100%
+        &__points
+            margin-left: 10px
+            padding: 5px 10px
+            color: #fff
+            background: $lightRed
+
+    &-p
+        margin-bottom: 15px
+        font-size: 15px
+    &-item
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        margin-bottom: 15px
+        &__num
+            background: url(../img/results/point.png) center no-repeat
+            -webkit-background-size: contain
+            background-size: contain
+            width: 30px
+            height: 30px
+            flex-shrink: 0
+            display: flex
+            align-items: center
+            justify-content: center
+            color: #fff
+            font-size: 20px
+            font-weight: 600
+        &__descr
+            margin-left: 15px
+            font-size: 15px
+
+    &-most
+        &__title
+            margin: 0 auto 30px
+            max-width: 700px
+            &::before, &::after
+                display: none
+
+    &-start
+        &__left
+            position: relative
+            z-index: 5
+        &__img
+            width: 600px
+            bottom: -35px
+            z-index: 0
+        &__title
+            margin-bottom: 0
+        &__free
+            margin-bottom: 0
+            color: $lightRed
+            font-weight: 700
+            font-size: 40px
+            &::after
+                display: none
+        &__now
+            margin-bottom: 20px
+            font-size: 30px
+            font-weight: 700
+        &__btn
+            span
+                &:first-child
+                    margin-bottom: 0
+
+@media screen and (max-width: 991px)
+    .results
+        &-start
+            &__img
+                width: 400px
+
+@media screen and (max-width: 767px)
+    .results
+        &-most
+            &__title
+                width: 100%
+
+@media screen and (max-width: 575px)
+    .results
+        &-p
+            font-size: 13px
+        &-table
+            font-size: 15px
+            tbody
+                tr
+                    padding: 5px
+        &-item
+            &__descr
+                font-size: 13px
+        &-start
+            &__btn
+                margin: auto
+
+
