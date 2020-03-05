@@ -27,13 +27,20 @@
 
 .programs
     display: flex
-    justify-content: center
-    width: 100%
+    justify-content: flex-start
+    margin: auto
+    width: calc(355px*4)
     flex-wrap: wrap
     background: transparent
     &-wrap
         display: none
         position: absolute
+        &__block
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-wrap: wrap
+            width: 100%
     &-block
         display: table
         margin: 2.5px
@@ -88,8 +95,17 @@
                 i
                     display: block
 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 1420px)
     .programs
+        width: calc(355px*3)
+
+@media screen and (max-width: 1065px)
+    .programs
+        width: calc(355px*2)
+
+@media screen and (max-width: 710px)
+    .programs
+        width: calc(305px*2)
         &-block
             width: 300px
             &__img
@@ -97,3 +113,8 @@
                 height: 67px
             &__descr
                 font-size: 12px
+
+@media screen and (max-width: 609px)
+    .programs
+        width: 100%
+        justify-content: center

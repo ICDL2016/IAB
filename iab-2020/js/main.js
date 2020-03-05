@@ -163,4 +163,26 @@ $(document).ready(function () {
             $(this).parent().submit();
         }
     });
+
+    //курсы
+    if($('.offer-blocks').length) {
+        let current = 8;
+        let all = $('.offer-block').length;
+        if (current < all) {
+            $('.offer-current').html(current);
+            $('.offer-all').html(all);
+            $('.offer-block').hide().slice(0,current).fadeIn();
+            $('.offer-more').click(function (e) {
+                e.preventDefault();
+                current += 6;
+                if (current >= all) {
+                    $('.offer-more').hide();
+                }
+                $('.offer-block').hide().slice(0,current).fadeIn();
+                $('.offer-current').html(current);
+            });
+        } else {
+            $('.offer-more').hide();
+        }
+    }
 });
