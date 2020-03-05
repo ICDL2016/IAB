@@ -25,13 +25,15 @@
                             <div class="advantages-text">Более</div>
                             <div class="advantages-number">390</div>
                             <div class="advantages-text">дистанционных
-                                курсов обучения</div>
+                                курсов обучения
+                            </div>
                         </div>
                     </div>
                     <div class="advantages-block">
                         <div class="advantages-info">
                             <div class="advantages-text">Обучение из любой
-                                точки мира на</div>
+                                точки мира на
+                            </div>
                             <div class="advantages-number">20</div>
                             <div class="advantages-text">языках</div>
                         </div>
@@ -41,13 +43,15 @@
                             <div class="advantages-text">Более</div>
                             <div class="advantages-number">3000</div>
                             <div class="advantages-text">экспертов по всему
-                                миру</div>
+                                миру
+                            </div>
                         </div>
                     </div>
                     <div class="advantages-block">
                         <div class="advantages-info">
                             <div class="advantages-text">Перспективное
-                                обучение с</div>
+                                обучение с
+                            </div>
                             <div class="advantages-number">2001</div>
                             <div class="advantages-text">года</div>
                         </div>
@@ -65,14 +69,17 @@
         </div>
     </section>
 
-<div class="aboutUs-margin"></div>
+    <div class="aboutUs-margin"></div>
 
     <section class="aboutUs-whyChoose whyChoose">
-<?php require_once '_why-choose.php'; ?>
+        <?php require_once '_why-choose.php'; ?>
     </section>
 
 <?php require_once '_clients.php'; ?>
-<?php require_once '_about.php'; ?>
+
+    <section class="about">
+        <?php require_once '_about.php'; ?>
+    </section>
 <?php require_once '_reviews.php'; ?>
 <?php require_once '_steps.php'; ?>
 
@@ -138,9 +145,10 @@
                 margin = '160px'
             }
         }
+
         marginF();
 
-        window.onresize = function() {
+        window.onresize = function () {
             marginF();
         };
 

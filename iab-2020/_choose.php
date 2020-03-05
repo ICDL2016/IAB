@@ -15,22 +15,22 @@
                     Гостиничный бизнес и туризм
                 </div>
                 <div class="programs-wrap" data-program="<?= $i + 1 ?>">
-                    <div class="programs">
-                        <?php for ($k = 0; $k < 8; $k++) : ?>
-                            <div class="programs-block">
-                                <div class="programs-block__img">
-                                    <div class="programs-block__hover">
-                                        <i class="fa fa-search"></i>
+                    <div class="programs-wrap__block">
+                        <?php for($k=0; $k<10; $k++) : ?>
+                            <div class="course-other__block">
+                                <div class="course-other__img"></div>
+                                <div class="course-other__info">
+                                    <div class="course-other__name">Полный очный курс гостиничного управления "УПРАВЛЕНИЕ ГОСТИНИЧНЫМ БИЗНЕСОМ"</div>
+                                    <div class="course-other__bottom">
+                                        <div class="course-other__hours">340 часов</div>
+                                        <div class="course-other__price">
+                                            <span class="course-other__price-old">95000 Р</span>
+                                            <span class="course-other__price-new">47500 Р</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="programs-block__descr">
-                                    <div class="programs-block__title">Часть 1</div>
-                                    <div class="programs-block__text">Санитарные нормы на предприятии
-                                        общественного питания</div>
-                                    <div class="programs-block__more">Подробнее</div>
-                                </div>
                             </div>
-                        <?php endfor; ?>
+                        <?php endfor;?>
                     </div>
                 </div>
             <?php endfor; ?>

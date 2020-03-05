@@ -3,7 +3,7 @@
         <div class="start-block">
 
             <div class="start-left">
-                <div class="start-icon">
+                <div class="cstart-icon">
                     <img src="img/start/home.svg" alt="home">
                 </div>
 
