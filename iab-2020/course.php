@@ -47,7 +47,7 @@
                     прямо сейчас
                 </div>
 
-                <div class="proforient-btn btn">
+                <div class="btn popup-btn course-figure__btn">
                     <img src="img/big-star.png" alt="star" class="btn-star">
                     <img src="img/star-hover.png" alt="star" class="btn-star__hover">
                     <div class="btn-text">
@@ -186,7 +186,7 @@
             </div>
         </div>
 
-        <div class="proforient-btn btn popup-btn">
+        <div class="btn popup-btn course-about__btn">
             <img src="img/big-star.png" alt="star" class="btn-star">
             <img src="img/star-hover.png" alt="star" class="btn-star__hover">
             <div class="btn-text">
@@ -356,6 +356,11 @@
         $('.choose-wrapper').css('top', '-20px');
         $('.course-margin').css('margin-top', '0');
         $('.course-video').css('padding-bottom', '0');
+        $('.course-video').css({
+            position: 'relative',
+            zIndex: 2,
+            bottom: '-3px'
+        });
         $('.course-choose__wrapper, .course-container').css('position', 'static');
         $('.course-choose__wrapper').css({
             transform: 'none',

@@ -112,12 +112,18 @@ $(document).ready(function () {
 
     //popup form
     $('.popup-btn').click(function () {
-       $('.overlay, .popup').fadeIn();
-       $('body').css('overflow', 'hidden');
+        $('.overlay, .popup').fadeIn();
+        $('body').css('overflow', 'hidden');
     });
     $('.popup-close, .overlay').click(function () {
-        $('.overlay, .popup').fadeOut();
+        $('.overlay, .popup, .popup-course').fadeOut();
         $('body').css('overflow-y', 'visible');
+    });
+
+    //popup course form
+    $('.programs-block, .offer-block').click(function () {
+        $('.overlay, .popup-course').fadeIn();
+        $('body').css('overflow', 'hidden');
     });
 
     // псевдовалидация попап

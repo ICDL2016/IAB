@@ -84,7 +84,23 @@
     </form>
 </div>
 
-
+<div class="popup-course">
+    <div class="popup-close">
+        <i class="fa fa-close"></i>
+    </div>
+    <h2 class="popup-course__title">Заголовок</h2>
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+</div>
 
 
 

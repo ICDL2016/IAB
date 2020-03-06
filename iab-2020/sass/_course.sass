@@ -48,7 +48,7 @@
             display: flex
             align-items: center
             justify-content: flex-start
-            margin-bottom: 15px
+            margin-bottom: 10px
         &__text
             display: flex
             align-items: center
@@ -94,6 +94,8 @@
                 font-size: 30px
                 font-weight: 700
                 display: block
+        &__btn
+            margin: auto
 
     &-container
         position: relative
@@ -103,6 +105,8 @@
 
     &-about
         position: relative
+        &__btn
+            margin: auto
     &-whyChoose
         background: url(../img/course/resume.jpg) center no-repeat
         -webkit-background-size: cover
@@ -239,15 +243,78 @@
 
 @media screen and (max-width: 991px)
     .course
+        &-video
+            .video-play
+                bottom: 68px
         &-start
             &__img
                 right: 0
+        &-choose
+            &__wrapper
+                top: -333px
+        &-container
+            top: -300px
+        &-figure
+            margin-right: 10px
+            padding: 60px 30px 20px
+            width: 400px
+            height: 320px
+            &__block
+                margin-left: 35px
+                margin-bottom: 5px
+            &__icon
+                width: 40px
+            &__text
+                &-hours
+                    font-size: 25px
+                &-comment
+                    font-size: 18px
+            &__price
+                &-old
+                    font-size: 20px
+                &-new
+                    font-size: 25px
+            &__cta
+                line-height: 1
+                font-size: 20px
+                span
+                    font-size: 25px
+            &__btn
+                width: 290px
+                .btn-star
+                    width: 40px
+                .btn-text span:first-child
+                    font-size: 16px
+        &-margin
+            margin-top: -270px
 
 @media screen and (max-width: 914px)
     .course
         &-other
             &__blocks
                 width: calc(305px*2)
+
+@media screen and (max-width: 767px)
+    .course
+        &-video
+            .video-play
+                bottom: 90px
+                svg
+                    width: 50px
+        &-container
+            top: -335px
+        &-choose
+            &__wrapper
+                top: -363px
+        &-start
+            padding-top: 30px
+            &__img
+                display: none
+        &-main
+            &__title
+                margin: 0 auto
+        &-margin
+            margin-top: -333px
 
 @media screen and (max-width: 709px)
     .course
@@ -256,18 +323,62 @@
                 width: 100%
                 justify-content: center
 
-@media screen and (max-width: 991px)
+@media screen and (max-width: 575px)
     .course
-        &-start
-            padding-top: 30px
-            &__img
-                display: none
+        &-figure
+            margin-right: 0
+        &-container
+            top: -265px
+        &-video
+            .video-play
+                bottom: 70px
+        &-main
+            &__title
+                font-size: 18px
+        &-choose
+            &__wrapper
+                top: -290px
+        &-margin
+            margin-top: -255px
 
-
-
-
-
-
+@media screen and (max-width: 400px)
+    .course
+        &-main
+            &__subtitle
+                width: auto
+                text-align: center
+            &__title
+                font-size: 13px
+        &-figure
+            padding: 65px 30px 20px
+            height: 292px
+            width: 100%
+            &__block
+                margin-bottom: 0
+                margin-left: 25px
+            &__icon
+                width: 30px
+            &__text
+                margin-left: 5px
+                &-hours
+                    font-size: 20px
+                &-comment
+                    font-size: 15px
+            &__price
+                &-old
+                    font-size: 15px
+                &-new
+                    font-size: 20px
+            &__cta
+                margin-bottom: 5px
+                line-height: 1
+                font-size: 15px
+                span
+                    font-size: 20px
+            &__btn
+                width: 230px
+                .btn-star
+                    width: 30px
 
 
 

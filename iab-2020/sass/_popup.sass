@@ -71,6 +71,25 @@
                 &__hover
                     width: 40px
 
+.popup-course
+    display: none
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 90%
+    max-width: 800px
+    padding: 20px
+    background: $red
+    z-index: 1000
+    .popup-close
+        color: #fff
+    &__title
+        margin-bottom: 20px
+        color: $yellow
+    ul
+        color: #fff
+
 .cert-popup
     .popup-form__btn
         .btn-text
