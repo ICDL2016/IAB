@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
-    $('.header-burger').click(function () {
-        $(this).children('.header-menu').slideToggle();
+    $('.header-burger i').click(function (e) {
+        $(this).next('.header-menu').slideToggle();
     });
 
     $('.reviews-slider, .success-slider').owlCarousel({
